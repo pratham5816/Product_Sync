@@ -1,6 +1,7 @@
 
 
 
+
 OMS Data Model                                         Shopify Data Model
 ------------------------------------------------------------------------------------------------------
 Product Entity                                         Product Object           [id , description]
@@ -19,4 +20,48 @@ Product Category                                       Category
 
 Product Category Roll Up                               Taxonomy tree
 
+
+
+
+
+
+
+Field Mapping (Actual Mapping in codebase )
+
+OMS                                                    Shopify
+
+
+ProductId                                              SystemGenerated oms
+
+ProductName                                            title
+
+DetailImageUrl                                         Image.url
+
+shippingWeight 	                                       InventoryItem.measurement.value
+
+productWeight 	                                       InventoryItem.measurement.value
+
+ProductPrice.price                                     price
+ 
+GoodIdentification.id_value                            barcode
+
+GoodIdentification.id_value                            sku
+              
+Internal Name                                          sku 
+
+Brand Name                                             Vendor 
+
+[IMP]
+Shopify Inventory Item Id (Shopify Shop Product)       InventoryItem.id
+
+                                                       [suffix removed]
+Shopify Product Id                                     Id(gi.....10079785100) 
+
+ProductFeature.productfeaturetypeid                    selectedOptions.name
+[COLOR | SIZE ] - selectable/standard feature
+
+ProductFeature.description                             selectedOptions.value
+[RED | BLACK | XS | L ]- selectable/standard feature
+
+ProductFeatureAppl.SequenceNum                         position [not sure]
 

@@ -1,0 +1,44 @@
+{
+  "id": "gid://shopify/ProductVariant/48528641917245",
+  "title": "S / Black",
+  "sku": "MH02-S-Black",
+  "barcode": "MH02SBlack",
+  "product": {
+    "id": "gid://shopify/Product/9318978978109",
+    "handle": "teton-pullover-hoodie",
+    "title": "Teton Pullover Hoodie",
+    "isGiftCard": false,
+    "productType": "",
+    "vendor": "HotWax"
+  },
+  "price": "70.00",
+  "compareAtPrice": null,
+  "position": 4,
+  "requiresComponents": false,
+  "image": {
+    "url": "https://cdn.shopify.com/s/files/1/0783/1663/4429/files/mh02-black_main.jpg?v=1713881537"
+  },
+  "selectedOptions": [
+    {
+      "name": "Size",
+      "value": "S"
+    },
+    {
+      "name": "Color",
+      "value": "Black"
+    }
+  ],
+  "inventoryItem": {
+    "id": "gid://shopify/InventoryItem/50569316368701",
+    "requiresShipping": true,
+    "measurement": {
+      "weight": {
+        "unit": "POUNDS",
+        "value": 0.6614
+      }
+    }
+  },
+  "__parentId": "gid://shopify/Product/9318978978109"
+}
+
+// product id = M101822
