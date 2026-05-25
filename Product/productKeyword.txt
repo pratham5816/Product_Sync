@@ -1,0 +1,7 @@
+Product 
+    - Product is something ( physical or not(digital) ) created throught a process that provides benefit to a market
+    - (big book) It can be goods or services - further we can say a shoe is an example finished good.
+    - HotWax Software can be called as a product.(which is a service)  
+    - A chair is a physical product
+    - Products can have recursive products - say a pen is a product and it has a refil which comes inside it.
+        (product can exist within product)

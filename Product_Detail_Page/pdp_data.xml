@@ -1,0 +1,371 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+
+
+    <ProdCatalog catalogName="AmazonCatalog" createdStamp="2025-05-11 15:47:06.759"
+                 createdTxStamp="2026-05-11 15:47:06.543" lastUpdatedStamp="2026-05-11 15:47:06.759"
+                 lastUpdatedTxStamp="2026-05-11 15:47:06.543" prodCatalogId="AmazonCatalog" useQuickAdd="Y"/>
+
+    <ProductCategory createdStamp="2026-05-11 15:47:06.764"
+                     createdTxStamp="2026-05-11 15:47:06.543"
+                     lastUpdatedStamp="2026-05-11 15:47:06.764"
+                     lastUpdatedTxStamp="2026-05-11 15:47:06.543"
+                     longDescription="Amazon Colth Category"
+                     primaryParentCategoryId="CATALOG1"
+                     productCategoryId="PC100"
+                     productCategoryTypeId="CATALOG_CATEGORY"/>
+
+    <ProdCatalogCategory createdStamp="2026-05-11 15:47:06.786"
+                         createdTxStamp="2026-05-11 15:47:06.543"
+                         fromDate="2001-05-13 12:00:00.0"
+                         lastUpdatedStamp="2026-05-11 15:47:06.786"
+                         lastUpdatedTxStamp="2026-05-11 15:47:06.543"
+                         prodCatalogCategoryTypeId="PCCT_BROWSE_ROOT"
+                         prodCatalogId="AmazonCatalog"
+                         productCategoryId="PC100"
+                         sequenceNum="1"/>
+
+    <ProductFeatureType createdStamp="2026-05-11 15:46:54.58" createdTxStamp="2026-05-11 15:46:54.42"
+                        description="Sleeve_Type" hasTable="N" lastUpdatedStamp="2026-05-11 15:46:54.58"
+                        lastUpdatedTxStamp="2026-05-11 15:46:54.42" productFeatureTypeId="SLEEVE_TYPE"/>
+
+    <ProductFeatureType createdStamp="2026-05-11 15:46:54.58" createdTxStamp="2026-05-11 15:46:54.42"
+                        description="Fit_Type" hasTable="N" lastUpdatedStamp="2026-05-11 15:46:54.58"
+                        lastUpdatedTxStamp="2026-05-11 15:46:54.42" productFeatureTypeId="FIT_TYPE"/>
+
+
+    <ProductFeatureType createdStamp="2026-05-11 15:46:54.58" createdTxStamp="2026-05-11 15:46:54.42"
+                        description="Pattern" hasTable="N" lastUpdatedStamp="2026-05-11 15:46:54.58"
+                        lastUpdatedTxStamp="2026-05-11 15:46:54.42" productFeatureTypeId="PATTERN"/>
+
+    <ProductFeatureType createdStamp="2026-05-11 15:46:54.58" createdTxStamp="2026-05-11 15:46:54.42"
+                        description="Collar_Type" hasTable="N" lastUpdatedStamp="2026-05-11 15:46:54.58"
+                        lastUpdatedTxStamp="2026-05-11 15:46:54.42" productFeatureTypeId="COLLAR_TYPE"/>
+
+
+    <Product
+            billOfMaterialLevel="0"
+            brandName="Peter England"
+            createdByUserLogin="admin"
+            createdDate="2023-04-07 09:20:04.327"
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            depthUomId="LEN_cm"
+            description="Enhance your everyday style with the Peter England Everyday Polo T-shirt, designed for the modern man who values both comfort and sophistication. "
+            heightUomId="LEN_cm"
+            internalName="Peter-England-Regular-Shirt"
+            inventoryItemTypeId="NON_SERIAL_INV_ITEM"
+            isVariant="N"
+            isVirtual="Y"
+            lastModifiedByUserLogin="admin"
+            lastModifiedDate="2025-06-27 08:54:13.056"
+            lastUpdatedStamp="2026-05-01 02:18:36.489"
+            lastUpdatedTxStamp="2025-06-27 08:54:13.008"
+            primaryProductCategoryId="PC100"
+            productId="PE100"
+            productName="Peter England Men's Regular Fit Solid Polo with Collar Tipping"
+            productTypeId="FINISHED_GOOD"
+            productUrlName="Peter-England-Regular-Shirt-PCKPSRGFG15920_Navy"
+            weightUomId="WT_g"
+            widthUomId="LEN_in"
+    />
+
+    <ProductFeature
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            description="S"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureId="PT01"
+            productFeatureTypeId="SIZE"/>
+
+    <ProductFeature
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            description="M"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureId="PT02"
+            productFeatureTypeId="SIZE"/>
+    <ProductFeature
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            description="L"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureId="PT03"
+            productFeatureTypeId="SIZE"/>
+    <ProductFeature
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            description="XL"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureId="PT04"
+            productFeatureTypeId="SIZE"/>
+    <ProductFeature
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            description="2XL"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureId="PT05"
+            productFeatureTypeId="SIZE"/>
+    <ProductFeature
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            description="3XL"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureId="PT06"
+            productFeatureTypeId="SIZE"/>
+    <ProductFeature
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            description="NAVY"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureId="PT07"
+            productFeatureTypeId="COLOR"/>
+    <ProductFeature
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            description="BLACK"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureId="PT08"
+            productFeatureTypeId="COLOR"/>
+    <ProductFeature
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            description="GREEN"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureId="PT09"
+            productFeatureTypeId="COLOR"/>
+    <ProductFeature
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            description="WHITE"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureId="PT10"
+            productFeatureTypeId="COLOR"/>
+    <ProductFeature
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            description="WHITE"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureId="PT10"
+            productFeatureTypeId="COLOR"/>
+    />
+
+    <ProductFeature
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            description="Regular Fit"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureId="PT11"
+            productFeatureTypeId="FIT_TYPE"/>
+    />
+
+    <ProductFeature
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            description="Half Sleeve"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureId="PT12"
+            productFeatureTypeId="SLEEVE_TYPE"/>
+    />
+
+    <ProductFeature
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            description="Solid"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureId="PT13"
+            productFeatureTypeId="PATTERN"/>
+    />
+
+
+    <ProductFeature
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            description="Collared"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureId="PT14"
+            productFeatureTypeId="COLLAR_TYPE"/>
+    />
+
+    <ProductFeatureType createdStamp="2026-05-11 15:46:54.58" createdTxStamp="2026-05-11 15:46:54.42"
+                        description="Sleeve_Type" hasTable="N" lastUpdatedStamp="2026-05-11 15:46:54.58"
+                        lastUpdatedTxStamp="2026-05-11 15:46:54.42" productFeatureTypeId="SLEEVE_TYPE"/>
+
+    <ProductFeatureType createdStamp="2026-05-11 15:46:54.58" createdTxStamp="2026-05-11 15:46:54.42"
+                            description="Fit_Type" hasTable="N" lastUpdatedStamp="2026-05-11 15:46:54.58"
+                            lastUpdatedTxStamp="2026-05-11 15:46:54.42" productFeatureTypeId="FIT_TYPE"/>
+
+
+    <ProductFeatureType createdStamp="2026-05-11 15:46:54.58" createdTxStamp="2026-05-11 15:46:54.42"
+                        description="Pattern" hasTable="N" lastUpdatedStamp="2026-05-11 15:46:54.58"
+                        lastUpdatedTxStamp="2026-05-11 15:46:54.42" productFeatureTypeId="PATTERN"/>
+
+    <ProductFeatureType createdStamp="2026-05-11 15:46:54.58" createdTxStamp="2026-05-11 15:46:54.42"
+                        description="Collar_Type" hasTable="N" lastUpdatedStamp="2026-05-11 15:46:54.58"
+                        lastUpdatedTxStamp="2026-05-11 15:46:54.42" productFeatureTypeId="COLLAR_TYPE"/>
+
+
+    <ProductFeatureAppl
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            fromDate="2023-04-07 09:20:04.327"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureApplTypeId="STANDARD_FEATURE"
+            productFeatureId="PT14"
+            productId="PE100"
+            sequenceNum="14"/>
+
+    <ProductFeatureAppl
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            fromDate="2023-04-07 09:20:04.327"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureApplTypeId="STANDARD_FEATURE"
+            productFeatureId="PT13"
+            productId="PE100"
+            sequenceNum="13"/>
+
+    <ProductFeatureAppl
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            fromDate="2023-04-07 09:20:04.327"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureApplTypeId="STANDARD_FEATURE"
+            productFeatureId="PT12"
+            productId="PE100"
+            sequenceNum="12"/>
+
+    <ProductFeatureAppl
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            fromDate="2023-04-07 09:20:04.327"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureApplTypeId="STANDARD_FEATURE"
+            productFeatureId="PT11"
+            productId="PE100"
+            sequenceNum="11"/>
+
+    <ProductFeatureAppl
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            fromDate="2023-04-07 09:20:04.327"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureApplTypeId="SELECTABLE_FEATURE"
+            productFeatureId="PT01"
+            productId="PE100"
+            sequenceNum="1"/>
+    <ProductFeatureAppl
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            fromDate="2023-04-07 09:20:04.327"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureApplTypeId="SELECTABLE_FEATURE"
+            productFeatureId="PT02"
+            productId="PE100"
+            sequenceNum="2"/>
+    <ProductFeatureAppl
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            fromDate="2023-04-07 09:20:04.327"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureApplTypeId="SELECTABLE_FEATURE"
+            productFeatureId="PT03"
+            productId="PE100"
+            sequenceNum="3"/>
+    <ProductFeatureAppl
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            fromDate="2023-04-07 09:20:04.327"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureApplTypeId="SELECTABLE_FEATURE"
+            productFeatureId="PT04"
+            productId="PE100"
+            sequenceNum="4"/>
+    <ProductFeatureAppl
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            fromDate="2023-04-07 09:20:04.327"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureApplTypeId="SELECTABLE_FEATURE"
+            productFeatureId="PT05"
+            productId="PE100"
+            sequenceNum="5"/>
+    <ProductFeatureAppl
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            fromDate="2023-04-07 09:20:04.327"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureApplTypeId="SELECTABLE_FEATURE"
+            productFeatureId="PT06"
+            productId="PE100"
+            sequenceNum="6"/>
+    <ProductFeatureAppl
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            fromDate="2023-04-07 09:20:04.327"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureApplTypeId="SELECTABLE_FEATURE"
+            productFeatureId="PT07"
+            productId="PE100"
+            sequenceNum="7"/>
+    <ProductFeatureAppl
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            fromDate="2023-04-07 09:20:04.327"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureApplTypeId="SELECTABLE_FEATURE"
+            productFeatureId="PT08"
+            productId="PE100"
+            sequenceNum="8"/>
+    <ProductFeatureAppl
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            fromDate="2023-04-07 09:20:04.327"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureApplTypeId="SELECTABLE_FEATURE"
+            productFeatureId="PT09"
+            productId="PE100"
+            sequenceNum="9"/>
+    <ProductFeatureAppl
+            createdStamp="2023-04-07 09:20:04.327"
+            createdTxStamp="2023-04-07 09:20:04.327"
+            fromDate="2023-04-07 09:20:04.327"
+            lastUpdatedStamp="2023-04-07 09:20:04.327"
+            lastUpdatedTxStamp="2023-04-07 09:20:04.327"
+            productFeatureApplTypeId="SELECTABLE_FEATURE"
+            productFeatureId="PT10"
+            productId="PE100"
+            sequenceNum="10"/>
+</entity-engine-xml>
+
+
+

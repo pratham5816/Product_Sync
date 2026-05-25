@@ -1,0 +1,21 @@
+All ideas are real world and related to incidents happened to me.
+These systems or work flow can contain the 3 things -
+        data manager
+        system message
+        service jobs
+
+
+Ideas -
+
+    1. NEFT Transaction - A service is operated when a transaction is done.
+        settlement is done then next all tho we see the balance change the same time or same day.
+
+        Flow - A transaction is made from axis to hdfc. Apis will be thier and async calls will be thier between two systems.
+                Transaction will be saved later process will happen to settle it.
+
+    2. BookMyShow - A standup comedy show ticket booking. We book ticket and proceed to pay the amount. later we recieve invoice and details.
+                    now let us say show is after a month. we will recieve the physical tickets one week before the show's date.
+
+
+    3. Uber/blinkit/Zomato - An order / taxi is booked and the systems work with other systems to get the service completed.
+

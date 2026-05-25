@@ -1,0 +1,49 @@
+
+
+Admin API  vs StoreFront API
+
+- Admin side used to manage store data and configurations.
+(orders , products , customers , shipping , inventory , routing , proximity)
+- StoreFront is used for shopping experience and has nothing to do with complex logics.
+(displaying powerful pdp attracting customers to interact with website , displaying carts , products and collections , variants available)
+
+
+
+
+
+    Shopify                                          Ofbiz
+
+1.   ID!  (global id for product obj)                Good Identification - value | Good Identification Type - external id
+2.   legacy resource id                              Good Identification - value | Good Identification Type - legacy resource id
+3.   isGiftCard                                      Product type
+4.   publishedAt                                     Release Date
+5.   title                                           Product NameProductOptionValueSwatch
+
+6.   vendor                                          Good Identification | Product Attribute
+    (This info is not sufficient to map with vendor product)
+7.   description                                     description
+8.   category / taxonomy category
+
+     (To maintain the hierarchy in ofbiz we need each category does matter thier levels to map a final variant product's category)
+
+           name                                 Category Name
+           isleaf , isroot , level              product category type attr | product category
+           name                                 Category Name
+           id                                   external id
+9.   updatedAt                                  Last Updated Stamp (product)
+10.  createdAt                                  Created Date
+10.  ancestorIds                                map to json Product Category Type - description | seperate relation table
+11.  childrenIds                                                     ||
+12.  parentId                                   primaryParentCategoryId | Good Identification
+13.  isArchived                                 productAttr | product
+14.  status                                     productAttr | product
+15.  productvariant.id                          good_identification (shopify product id)
+16.  productvariant.unitprice.amount
+17.  productvariant.unitprice.currencycode
+18.  productvariant.sku
+19.  productvariant.updatedAt
+20.  productvariant.catalogs
+21.  productvariant.barcode
+22.  product.producttype                        product type
+23.  collections.edges.handle
+

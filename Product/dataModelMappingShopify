@@ -1,0 +1,22 @@
+
+
+
+OMS Data Model                                         Shopify Data Model
+------------------------------------------------------------------------------------------------------
+Product Entity                                         Product Object           [id , description]
+
+Product Attribute                                      Metafields
+
+Product Assoc                                          bundleComponents          [association]
+
+Product Feature | Type                                 Product Option
+
+Product Price                                          Product Variant
+
+Good Identifications                                   Product Variant            [price , sku , barcode]
+
+Product Category                                       Category
+
+Product Category Roll Up                               Taxonomy tree
+
+

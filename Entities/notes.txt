@@ -1,0 +1,98 @@
+
+
+
+1. Product -
+            Master Entity which defines product which are  manufactured , marketed  and supplied by enterprise.
+            Product can be tangible(physical) and not tangible(service / digital).
+            This entity acts as central for inventory , order , catalog , category and shipment.
+
+2. Product Attribute -
+           A supporting entity when any attribute is not suitable or field is not there to put. this table is used to extend the details.
+           custom or external systems attribute of products are stored.
+
+3. Product Type -
+           It defines the nature or behavior of products.
+           ex - digital , physical or service.
+
+4. Product Type Attribute -
+           It Defines additional properties or configurations attributes applicable to a specific product type.
+
+5. Good Identification -
+            It Defines the good identification on item/product level, and it may have unique sequence/code numbers identifying each item individually / product.
+
+6. Good Identification Type -
+            It defines the natural or purpose of good identifications. It specifies what kind of identifications is used for product/item.
+
+7. Product Assoc -
+            It defines the relationship between two products. how one product is related with other products.
+            how products are associated with each other.
+            ex - virtual and variant products.
+
+8. Product Assoc Type -
+            It defines the nature or relationship/association applied between products.
+
+9. Product Keyword -
+            It stores the product id with particular product related keywords to identify it. later they or used for search engines for optimization.
+
+10. Product Price -
+            It describes the price related to product / item. It can be of any type say discount / tax / unit price.
+
+11. Product Feature -
+            It defines the characteristics , options or properties of product on which products are able to differentiate and configure.
+            they are used for variants , filtering and comparisons.
+
+12. Product Feature Type -
+            Entity used to classify and define the nature of product features. It helps organize similar types of product to group together.
+
+13. Product Feature Category -
+            An entity used to group and organize related product features into broader categories for easier management and classification.
+            It helps structure product features logically within the system.
+
+14. Product Feature Category Appl -
+            A mapping entity used to associate product features with a product feature category.
+            It defines which features belong to a particular feature category from starting date to end date.
+
+15. Product Feature Appl -
+            It is a join entity links a product to one or more product feature and forms a relationship.
+
+16. Product Feature Appl Attribute -
+            Supportive entity for any optional or custom attribute which can not fit in product feature appl.
+
+17. Product Category -
+            It helps make the logical grouping of products forming category in which product comes. searching , navigations and catalog presentation.
+
+18. Product Category Type -
+            An entity used to classify and define the nature or purpose of a product category.
+            It helps determine how a category is used within catalogs, storefronts, or internal business processes.
+
+19. Product Category Type Attribute -
+
+20. Product Category RollUp -
+            It is a self referencing entity to product category which enables the way to form parent child relationship between product categories.
+
+21. Product Category Member -
+            It is a joining entity which joins product and product category. It helps associate products under a category and organize them.
+
+22. ProdCatalog -
+            A master entity used to organize and manage collections of product categories, products, pricing, and storefront-related configurations.
+            A catalog acts as a high-level container for presenting products to customers.
+
+23. Product Catalog Category -
+            A join entity used to associate product categories with a product catalog.
+            It defines which categories belong to a particular catalog and helps structure the catalog hierarchy.
+
+24. Product Catalog Category Type -
+            It defines the nature of catalog hierarchy type in a catalog. In a catalog exists many category and this entity maps.
+
+25. Product Store -
+            This Entity defines a product store in the system.
+
+26. Product Store Catalog -
+            This Entity maps a product store to product catalog.
+
+27. Shopify Shop
+            It defines the Shopify Shop in system.
+
+28. Shopify Shop Product
+            It Maps with each product with its shopify shop and inventory item.
+

@@ -1,0 +1,96 @@
+{
+  "id": "gid://shopify/Product/10079785100",
+  "title": "Premium Cotton T-Shirt",
+  "handle": "premium-cotton-t-shirt",
+  "status": "ACTIVE",
+  "productType": "T-Shirt",
+  "isGiftCard": false,
+  "requiresSellingPlan": false,
+
+  "options": [
+    {
+      "id": "gid://shopify/ProductOption/2001",
+      "name": "Size",
+      "position": 1,
+      "values": ["S", "M", "L"]
+    },
+    {
+      "id": "gid://shopify/ProductOption/2002",
+      "name": "Color",
+      "position": 2,
+      "values": ["Black", "White"]
+    }
+  ],
+
+  "variants": [
+    {
+      "id": "gid://shopify/ProductVariant/3001",
+      "title": "Black / S",
+      "sku": "TSHIRT-BLK-S",
+      "availableForSale": true,
+      "sellableOnlineQuantity": 15,
+      "inventoryQuantity": 15,
+      "inventoryPolicy": "DENY",
+      "price": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      },
+      "compareAtPrice": null,
+      "selectedOptions": [
+        { "name": "Size", "value": "S" },
+        { "name": "Color", "value": "Black" }
+      ],
+      "inventoryItem": {
+        "id": "gid://shopify/InventoryItem/4001",
+        "tracked": true
+      }
+    },
+    {
+      "id": "gid://shopify/ProductVariant/3002",
+      "title": "Black / M",
+      "sku": "TSHIRT-BLK-M",
+      "availableForSale": false,
+      "sellableOnlineQuantity": 0,
+      "inventoryQuantity": 0,
+      "inventoryPolicy": "DENY",
+      "price": {
+        "amount": "19.99",
+        "currencyCode": "USD"
+      },
+      "compareAtPrice": null,
+      "selectedOptions": [
+        { "name": "Size", "value": "M" },
+        { "name": "Color", "value": "Black" }
+      ],
+      "inventoryItem": {
+        "id": "gid://shopify/InventoryItem/4002",
+        "tracked": true
+      }
+    },
+    {
+      "id": "gid://shopify/ProductVariant/3003",
+      "title": "White / L",
+      "sku": "TSHIRT-WHT-L",
+      "availableForSale": true,
+      "sellableOnlineQuantity": 5,
+      "inventoryQuantity": 5,
+      "inventoryPolicy": "DENY",
+      "price": {
+        "amount": "21.99",
+        "currencyCode": "USD"
+      },
+      "compareAtPrice": {
+        "amount": "24.99",
+        "currencyCode": "USD"
+      },
+      "selectedOptions": [
+        { "name": "Size", "value": "L" },
+        { "name": "Color", "value": "White" }
+      ],
+      "inventoryItem": {
+        "id": "gid://shopify/InventoryItem/4003",
+        "tracked": true
+      }
+    }
+  ]
+}

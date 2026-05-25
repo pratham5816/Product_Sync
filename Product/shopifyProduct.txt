@@ -1,0 +1,95 @@
+Products and Collections:
+    Collections in shopify refers to the grouping of products in some way which is beneficial for querying , 
+    storing and manipulating the data.
+    
+
+
+    Objects - 
+
+        Product -  
+            id - global id
+
+            bundleComponents - list of components assoc with a product in a bundle
+
+            category - 
+                AncestorsId - can be termed as parenttypeid   | relevant to product category roll up 
+                Attributes - 
+                fullName - category name
+                id -  global id
+
+            created at - timestamp created
+
+            description - 
+
+            featuedMedia - image / video / url
+
+            isGiftCard - 
+
+            productType - 
+        
+            Seo - 
+            
+
+            ProductVariants - manages full lifecycle of product variants in shopify. assoc with product.
+                        id - global id 
+                        avaiableForSale - 
+                        barcode - 
+                        createdAt - 
+                        price - price of product relevant to product_price in oms.
+                        sku -
+                        taxable - 
+                        title - ex red polo xl slim fit
+                        unit price - 
+                        unit price measurement - 
+
+            Product Status - possible product status 
+                    Active | Archived | Draft | Unlisted 
+            
+
+            Weight - 
+
+            Product Option - Product attributes customers can choose - size , color , metarial 
+                    id - global id
+                    name - 
+                    LinkedMetafield - 
+                            key - 
+                            namespace - 
+            
+                    optionValues - 
+                            hasVariants -
+                            id - 
+                            linkedmetafieldValue -
+                            name - 
+                            swatch - 
+                                color - 
+                                image - 
+            
+            hasOnlyDefaultVariant - 
+            onlineStoreUrl - 
+            ProductPriceRangeV2 - 
+                    maxVariantPrice - 
+                        amount - 
+                        currencyCode - 
+                    minVariantPrice - 
+                        amount -
+                        currencyCode - 
+
+            PublishedAt -
+            totalInventory -
+            tracksInventory - 
+            variantsCount - 
+                    count - 
+                    precision -
+            
+            Taxonomy Category - provides hierarchical org throught parent - child relationship 
+                    ancestors Id - 
+                    Attributes - 
+                    children Id - 
+                    Id - 
+                    fullName - 
+                    isArchived -
+                    isLeaf - 
+                    isRoot -
+                    Level - 
+                    name - 
+                    parentid - 
