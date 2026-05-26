@@ -19,3 +19,4 @@ Ideas -
 
     3. Uber/blinkit/Zomato - An order / taxi is booked and the systems work with other systems to get the service completed.
 
+    4. Stocks - Chart data import and export.
