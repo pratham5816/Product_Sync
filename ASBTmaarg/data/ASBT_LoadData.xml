@@ -1,0 +1,2196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This software is in the public domain under CC0 1.0 Universal plus a
+Grant of Patent License.
+
+To the extent possible under law, the author(s) have dedicated all
+copyright and related and neighboring rights to this software to the
+public domain worldwide. This software is distributed without any
+warranty.
+
+You should have received a copy of the CC0 Public Domain Dedication
+along with this software (see the LICENSE.md file). If not, see
+<http://creativecommons.org/publicdomain/zero/1.0/>.
+-->
+
+<entity-facade-xml type="seed">
+
+
+    <org.apache.ofbiz.shipment.shipment.ShipmentMethodType shipmentMethodTypeId="SECOND_DAY" description="Expedited"/>
+
+
+    <org.apache.ofbiz.party.party.Party partyId="10000" partyTypeId="PARTY_GROUP" statusId="PARTY_ENABLED"/>
+
+    <org.apache.ofbiz.party.party.PartyGroup groupName="A S Beauty Group"
+                                             partyId="10000"/>
+
+    <org.apache.ofbiz.party.party.Party partyId="20001" partyTypeId="PERSON" statusId="PARTY_ENABLED">
+        <org.apache.ofbiz.party.party.PartyRole
+                partyId="10000" roleTypeId="CUSTOMER"/>
+    </org.apache.ofbiz.party.party.Party>
+
+
+    <org.apache.ofbiz.product.store.ProductStore allowPassword="Y" allowSplit="Y"
+                                                 authDeclinedMessage="There has been a problem with your method of payment. Please try a different method or call customer service."
+                                                 authErrorMessage="Problem connecting to payment processor; we will continue to retry and notify you by email."
+                                                 authFraudMessage="Your order has been rejected and your account has been disabled due to fraud."
+                                                 autoApproveInvoice="Y" autoApproveOrder="N" autoSaveCart="N"
+                                                 autoSetFacility="Y"
+                                                 balanceResOnOrderCreation="N" catalogUrlMountPoint="products"
+                                                 checkInventory="N" companyName="A S Beauty Group"
+                                                 daysToCancelNonPay="0"
+                                                 defaultCurrencyUomId="USD" defaultLocaleString="en_US"
+                                                 defaultSalesChannelEnumId="WEB_SALES_CHANNEL"
+                                                 digitalItemApprovedStatus="ITEM_APPROVED" enableBrokering="Y"
+                                                 enablePreOrderAutoReleasing="Y"
+                                                 explodeOrderItems="Y" headerApprovedStatus="ORDER_APPROVED"
+                                                 headerCancelStatus="ORDER_CANCELLED"
+                                                 headerDeclinedStatus="ORDER_REJECTED" inventoryFacilityId="_NA_"
+                                                 itemApprovedStatus="ITEM_APPROVED"
+                                                 itemCancelStatus="ITEM_CANCELLED" itemDeclinedStatus="ITEM_REJECTED"
+                                                 oneInventoryFacility="N" payToPartyId="10000"
+                                                 primaryStoreGroupId="AS_BEAUTY_GROUP"
+                                                 prodSearchExcludeVariants="Y"
+                                                 productIdentifierEnumId="SHOPIFY_PRODUCT_SKU"
+                                                 productStoreId="ASBT_STORE"
+                                                 prorateShipping="Y" prorateTaxes="Y" reqReturnInventoryReceive="N"
+                                                 requireInventory="Y"
+                                                 reserveInventory="Y" reserveOrderEnumId="INVRO_FIFO_REC"
+                                                 retryFailedAuths="Y" shipIfCaptureFails="N"
+                                                 storeCreditValidDays="90" storeName="JULEP-STORE" subtitle="JULEP"
+                                                 title="JULEP"
+                                                 usePrimaryEmailUsername="Y" viewCartOnAdd="N">
+
+        <org.apache.ofbiz.product.store.ProductStoreSetting settingTypeEnumId="AFFECT_QOH_ON_REJ" settingValue="N"/>
+        <org.apache.ofbiz.product.store.ProductStoreSetting settingTypeEnumId="BARCODE_IDEN_PREF"
+                                                            settingValue="SHOPIFY_PROD_SKU"/>
+        <org.apache.ofbiz.product.store.ProductStoreSetting settingTypeEnumId="RATE_SHOPPING" settingValue="Y"/>
+        <org.apache.ofbiz.product.store.ProductStoreSetting settingTypeEnumId="DEFULT_PKG_BOPIS_ORD"
+                                                            settingValue="BOPISPACKNG"/>
+        <org.apache.ofbiz.product.store.ProductStoreShipmentMeth fromDate="2026-05-16 00:35:31.998"
+                                                                 isTrackingRequired="Y" partyId="USPS"
+                                                                 productStoreShipMethId="ASBT_SHIP_01"
+                                                                 roleTypeId="CARRIER"
+                                                                 shipmentMethodTypeId="NEXT_DAY"/>
+
+    </org.apache.ofbiz.product.store.ProductStore>
+
+    <co.hotwax.shopify.ShopifyShop shopId="20000" countryCode="US"
+                                   currency="USD" email="integrations@hotwax.co"
+                                   isEnabled="Y"
+                                   name="ASBT_SHOPIFY_SHOP"
+                                   productStoreId="ASBT_STORE" timezone="America/New_York">
+
+        <co.hotwax.shopify.ShopifyShopTypeMapping
+                                mappedKey="sell-on-amazon" mappedTypeId="SHOPIFY_ORDER_SOURCE" mappedValue="AMAZON_SALES_CHANNEL"/>
+        <co.hotwax.shopify.ShopifyShopTypeMapping
+                mappedKey="sell-on-amazon" mappedTypeId="SHOPIFY_ORDER_SOURCE" mappedValue="AMAZON_SALES_CHANNEL"/>
+        <co.hotwax.shopify.ShopifyShopTypeMapping
+                mappedKey="shopify_draft_order" mappedTypeId="SHOPIFY_ORDER_SOURCE" mappedValue="CSR_SALES_CHANNEL"/>
+        <co.hotwax.shopify.ShopifyShopTypeMapping
+                mappedKey="sell-on-amazon" mappedTypeId="SHOPIFY_ORDER_SOURCE" mappedValue="AMAZON_SALES_CHANNEL"/>
+        <co.hotwax.shopify.ShopifyShopTypeMapping
+                mappedKey="web" mappedTypeId="SHOPIFY_ORDER_SOURCE" mappedValue="WEB_SALES_CHANNEL"/>
+        <co.hotwax.shopify.ShopifyShopTypeMapping
+                mappedKey="pos" mappedTypeId="SHOPIFY_ORDER_SOURCE" mappedValue="POS_SALES_CHANNEL"/>
+        <co.hotwax.shopify.ShopifyShopTypeMapping
+                mappedKey="GRAMS" mappedTypeId="SHOPIFY_WEIGHT_UNIT" mappedValue="WT_g"/>
+        <co.hotwax.shopify.ShopifyShopTypeMapping
+                mappedKey="KILOGRAMS" mappedTypeId="SHOPIFY_WEIGHT_UNIT" mappedValue="WT_kg"/>
+        <co.hotwax.shopify.ShopifyShopTypeMapping
+                mappedKey="KIT" mappedTypeId="SHOPIFY_PRODUCT_TYPE" mappedValue="MARKETING_PKG_PICK"/>
+        <co.hotwax.shopify.ShopifyShopTypeMapping
+                mappedKey="11790" mappedTypeId="SHOPIFY_GFT_CARD" mappedValue="GFT_CARD"/>
+    </co.hotwax.shopify.ShopifyShop>
+
+
+    <co.hotwax.shopify.ShopifyShopCarrierShipment carrierPartyId="_NA_" shipmentMethodTypeId="SECOND_DAY" shopId="20000"
+                                                  shopifyShippingMethod="Expedited"/>
+
+
+    <org.apache.ofbiz.party.contact.ContactMech contactMechId="CM1000" contactMechTypeId="POSTAL_ADDRESS">
+
+        <org.apache.ofbiz.party.contact.PostalAddress address1="201 Congress Avenue" city="Austin" countryGeoId="USA"
+                                                      createdStamp="2026-05-02 07:59:09.065"
+                                                      createdTxStamp="2026-05-02 07:59:09.007"
+                                                      lastUpdatedStamp="2026-05-02 07:59:09.116"
+                                                      lastUpdatedTxStamp="2026-05-02 07:59:09.095"
+                                                      latitude="30.27056900000" longitude="-97.74258900000"
+                                                      postalCode="78701"
+                                                      stateProvinceGeoId="TX" toName="Austin"/>
+    </org.apache.ofbiz.party.contact.ContactMech>
+
+    <org.apache.ofbiz.product.facility.FacilityGroup facilityGroupId="OMS_FULFILLMENT"
+                                                     facilityGroupName="ONLINE OMS FULFILLMENT"
+                                                     facilityGroupTypeId="FULFILLMENT"/>
+
+    <org.apache.ofbiz.product.facility.FacilityGroup facilityGroupId="FAC_GRP"
+                                                     facilityGroupName="FAC CHANNEL"
+                                                     facilityGroupTypeId="CHANNEL_FAC_GROUP"/>AA
+
+    <org.apache.ofbiz.product.facility.Facility
+            facilityId="Austin-Julep" facilityName="Austin" facilityTypeId="RETAIL_STORE" maximumOrderLimit="0"
+            ownerPartyId="10000" postalCode="78701">
+        <org.apache.ofbiz.product.facility.FacilityLocation
+                aisleId="TL" areaId="TL"
+                levelId="LL" locationSeqId="TLTLTLLL01" locationTypeEnumId="FLT_PICKLOC" positionId="01"
+                sectionId="TL"/>
+        <org.apache.ofbiz.product.facility.FacilityContactMech contactMechId="CM1000"
+                                                               fromDate="2026-05-02 07:59:09.079"/>
+
+        <org.apache.ofbiz.product.facility.FacilityGroupMember facilityGroupId="OMS_FULFILLMENT"
+                                                               fromDate="2026-06-10 07:00:24.36"/>
+    </org.apache.ofbiz.product.facility.Facility>
+
+
+    <!-- Facility Group -->
+
+
+
+
+    <!--  Facilities Records Retail_Store and Warehouse  -->
+    <!-- New York Facility -->
+
+    <org.apache.ofbiz.party.contact.ContactMech contactMechId="CM1001" contactMechTypeId="POSTAL_ADDRESS">
+        <org.apache.ofbiz.party.contact.PostalAddress address1="1 Center St" city="New York" countryGeoId="USA"
+                                                      createdStamp="2026-06-11 11:27:57.000"
+                                                      createdTxStamp="2026-06-11 11:27:57.000"
+                                                      lastUpdatedStamp="2026-06-11 11:27:57.000"
+                                                      lastUpdatedTxStamp="2026-06-11 11:27:57.000"
+                                                      latitude="40.71280000000" longitude="-74.00600000000"
+                                                      postalCode="10007"
+                                                      stateProvinceGeoId="NY" toName="New York"/>
+    </org.apache.ofbiz.party.contact.ContactMech>
+
+    <org.apache.ofbiz.product.facility.Facility
+            facilityId="NewYork-Julep" facilityName="New York" facilityTypeId="RETAIL_STORE" maximumOrderLimit="0"
+            ownerPartyId="10000" postalCode="10007">
+        <org.apache.ofbiz.product.facility.FacilityLocation
+                aisleId="TL" areaId="TL"
+                levelId="LL" locationSeqId="TLTLTLLL01" locationTypeEnumId="FLT_PICKLOC" positionId="01"
+                sectionId="TL"/>
+        <org.apache.ofbiz.product.facility.FacilityContactMech contactMechId="CM1001"
+                                                               fromDate="2026-06-11 11:27:57.000"/>
+
+        <org.apache.ofbiz.product.facility.FacilityGroupMember facilityGroupId="OMS_FULFILLMENT"
+                                                               fromDate="2026-06-10 07:00:24.36"/>
+    </org.apache.ofbiz.product.facility.Facility>
+
+
+    <!-- Los Angeles Facility -->
+    <org.apache.ofbiz.party.contact.ContactMech contactMechId="CM1002" contactMechTypeId="POSTAL_ADDRESS">
+        <org.apache.ofbiz.party.contact.PostalAddress address1="200 N Spring St" city="Los Angeles" countryGeoId="USA"
+                                                      createdStamp="2026-06-11 11:27:57.000"
+                                                      createdTxStamp="2026-06-11 11:27:57.000"
+                                                      lastUpdatedStamp="2026-06-11 11:27:57.000"
+                                                      lastUpdatedTxStamp="2026-06-11 11:27:57.000"
+                                                      latitude="34.05220000000" longitude="-118.24370000000"
+                                                      postalCode="90012"
+                                                      stateProvinceGeoId="CA" toName="Los Angeles"/>
+    </org.apache.ofbiz.party.contact.ContactMech>
+
+    <org.apache.ofbiz.product.facility.Facility
+            facilityId="LosAngeles-Julep" facilityName="Los Angeles" facilityTypeId="RETAIL_STORE" maximumOrderLimit="0"
+            ownerPartyId="10000" postalCode="90012">
+        <org.apache.ofbiz.product.facility.FacilityLocation
+                aisleId="TL" areaId="TL"
+                levelId="LL" locationSeqId="TLTLTLLL01" locationTypeEnumId="FLT_PICKLOC" positionId="01"
+                sectionId="TL"/>
+        <org.apache.ofbiz.product.facility.FacilityContactMech contactMechId="CM1002"
+                                                               fromDate="2026-06-11 11:27:57.000"/>
+
+        <org.apache.ofbiz.product.facility.FacilityGroupMember facilityGroupId="OMS_FULFILLMENT"
+                                                               fromDate="2026-06-10 07:00:24.36"/>
+    </org.apache.ofbiz.product.facility.Facility>
+
+    <!-- Chicago Facility -->
+    <org.apache.ofbiz.party.contact.ContactMech contactMechId="CM1003" contactMechTypeId="POSTAL_ADDRESS">
+        <org.apache.ofbiz.party.contact.PostalAddress address1="121 N LaSalle St" city="Chicago" countryGeoId="USA"
+                                                      createdStamp="2026-06-11 11:27:57.000"
+                                                      createdTxStamp="2026-06-11 11:27:57.000"
+                                                      lastUpdatedStamp="2026-06-11 11:27:57.000"
+                                                      lastUpdatedTxStamp="2026-06-11 11:27:57.000"
+                                                      latitude="41.87810000000" longitude="-87.62980000000"
+                                                      postalCode="60602"
+                                                      stateProvinceGeoId="IL" toName="Chicago"/>
+    </org.apache.ofbiz.party.contact.ContactMech>
+
+    <org.apache.ofbiz.product.facility.Facility
+            facilityId="Chicago-Julep" facilityName="Chicago" facilityTypeId="RETAIL_STORE" maximumOrderLimit="0"
+            ownerPartyId="10000" postalCode="60602">
+        <org.apache.ofbiz.product.facility.FacilityLocation
+                aisleId="TL" areaId="TL"
+                levelId="LL" locationSeqId="TLTLTLLL01" locationTypeEnumId="FLT_PICKLOC" positionId="01"
+                sectionId="TL"/>
+        <org.apache.ofbiz.product.facility.FacilityContactMech contactMechId="CM1003"
+                                                               fromDate="2026-06-11 11:27:57.000"/>
+
+        <org.apache.ofbiz.product.facility.FacilityGroupMember facilityGroupId="OMS_FULFILLMENT"
+                                                               fromDate="2026-06-10 07:00:24.36"/>
+    </org.apache.ofbiz.product.facility.Facility>
+
+    <!-- Houston Facility -->
+    <org.apache.ofbiz.party.contact.ContactMech contactMechId="CM1004" contactMechTypeId="POSTAL_ADDRESS">
+        <org.apache.ofbiz.party.contact.PostalAddress address1="901 Bagby St" city="Houston" countryGeoId="USA"
+                                                      createdStamp="2026-06-11 11:27:57.000"
+                                                      createdTxStamp="2026-06-11 11:27:57.000"
+                                                      lastUpdatedStamp="2026-06-11 11:27:57.000"
+                                                      lastUpdatedTxStamp="2026-06-11 11:27:57.000"
+                                                      latitude="29.76040000000" longitude="-95.36980000000"
+                                                      postalCode="77002"
+                                                      stateProvinceGeoId="TX" toName="Houston"/>
+    </org.apache.ofbiz.party.contact.ContactMech>
+
+    <org.apache.ofbiz.product.facility.Facility
+            facilityId="Houston-Julep" facilityName="Houston" facilityTypeId="RETAIL_STORE" maximumOrderLimit="0"
+            ownerPartyId="10000" postalCode="77002">
+        <org.apache.ofbiz.product.facility.FacilityLocation
+                aisleId="TL" areaId="TL"
+                levelId="LL" locationSeqId="TLTLTLLL01" locationTypeEnumId="FLT_PICKLOC" positionId="01"
+                sectionId="TL"/>
+        <org.apache.ofbiz.product.facility.FacilityContactMech contactMechId="CM1004"
+                                                               fromDate="2026-06-11 11:27:57.000"/>
+
+        <org.apache.ofbiz.product.facility.FacilityGroupMember facilityGroupId="OMS_FULFILLMENT"
+                                                               fromDate="2026-06-10 07:00:24.36"/>
+    </org.apache.ofbiz.product.facility.Facility>
+
+    <!-- Phoenix Facility -->
+    <org.apache.ofbiz.party.contact.ContactMech contactMechId="CM1005" contactMechTypeId="POSTAL_ADDRESS">
+        <org.apache.ofbiz.party.contact.PostalAddress address1="200 W Washington St" city="Phoenix" countryGeoId="USA"
+                                                      createdStamp="2026-06-11 11:27:57.000"
+                                                      createdTxStamp="2026-06-11 11:27:57.000"
+                                                      lastUpdatedStamp="2026-06-11 11:27:57.000"
+                                                      lastUpdatedTxStamp="2026-06-11 11:27:57.000"
+                                                      latitude="33.44840000000" longitude="-112.07400000000"
+                                                      postalCode="85003"
+                                                      stateProvinceGeoId="AZ" toName="Phoenix"/>
+    </org.apache.ofbiz.party.contact.ContactMech>
+
+    <org.apache.ofbiz.product.facility.Facility
+            facilityId="Phoenix-Julep" facilityName="Phoenix" facilityTypeId="RETAIL_STORE" maximumOrderLimit="0"
+            ownerPartyId="10000" postalCode="85003">
+        <org.apache.ofbiz.product.facility.FacilityLocation
+                aisleId="TL" areaId="TL"
+                levelId="LL" locationSeqId="TLTLTLLL01" locationTypeEnumId="FLT_PICKLOC" positionId="01"
+                sectionId="TL"/>
+        <org.apache.ofbiz.product.facility.FacilityContactMech contactMechId="CM1005"
+                                                               fromDate="2026-06-11 11:27:57.000"/>
+
+        <org.apache.ofbiz.product.facility.FacilityGroupMember facilityGroupId="OMS_FULFILLMENT"
+                                                               fromDate="2026-06-10 07:00:24.36"/>
+    </org.apache.ofbiz.product.facility.Facility>
+
+    <!-- Philadelphia Facility -->
+    <org.apache.ofbiz.party.contact.ContactMech contactMechId="CM1006" contactMechTypeId="POSTAL_ADDRESS">
+        <org.apache.ofbiz.party.contact.PostalAddress address1="1400 JFK Blvd" city="Philadelphia" countryGeoId="USA"
+                                                      createdStamp="2026-06-11 11:27:57.000"
+                                                      createdTxStamp="2026-06-11 11:27:57.000"
+                                                      lastUpdatedStamp="2026-06-11 11:27:57.000"
+                                                      lastUpdatedTxStamp="2026-06-11 11:27:57.000"
+                                                      latitude="39.95260000000" longitude="-75.16520000000"
+                                                      postalCode="19107"
+                                                      stateProvinceGeoId="PA" toName="Philadelphia"/>
+    </org.apache.ofbiz.party.contact.ContactMech>
+
+    <org.apache.ofbiz.product.facility.Facility
+            facilityId="Philadelphia-Julep" facilityName="Philadelphia" facilityTypeId="RETAIL_STORE"
+            maximumOrderLimit="0"
+            ownerPartyId="10000" postalCode="19107">
+        <org.apache.ofbiz.product.facility.FacilityLocation
+                aisleId="TL" areaId="TL"
+                levelId="LL" locationSeqId="TLTLTLLL01" locationTypeEnumId="FLT_PICKLOC" positionId="01"
+                sectionId="TL"/>
+        <org.apache.ofbiz.product.facility.FacilityContactMech contactMechId="CM1006"
+                                                               fromDate="2026-06-11 11:27:57.000"/>
+
+        <org.apache.ofbiz.product.facility.FacilityGroupMember facilityGroupId="OMS_FULFILLMENT"
+                                                               fromDate="2026-06-10 07:00:24.36"/>
+    </org.apache.ofbiz.product.facility.Facility>
+
+    <!-- San Antonio Facility -->
+    <org.apache.ofbiz.party.contact.ContactMech contactMechId="CM1007" contactMechTypeId="POSTAL_ADDRESS">
+        <org.apache.ofbiz.party.contact.PostalAddress address1="100 Military Plaza" city="San Antonio"
+                                                      countryGeoId="USA"
+                                                      createdStamp="2026-06-11 11:27:57.000"
+                                                      createdTxStamp="2026-06-11 11:27:57.000"
+                                                      lastUpdatedStamp="2026-06-11 11:27:57.000"
+                                                      lastUpdatedTxStamp="2026-06-11 11:27:57.000"
+                                                      latitude="29.42410000000" longitude="-98.49360000000"
+                                                      postalCode="78205"
+                                                      stateProvinceGeoId="TX" toName="San Antonio"/>
+    </org.apache.ofbiz.party.contact.ContactMech>
+
+    <org.apache.ofbiz.product.facility.Facility
+            facilityId="SanAntonio-Julep" facilityName="San Antonio" facilityTypeId="RETAIL_STORE" maximumOrderLimit="0"
+            ownerPartyId="10000" postalCode="78205">
+        <org.apache.ofbiz.product.facility.FacilityLocation
+                aisleId="TL" areaId="TL"
+                levelId="LL" locationSeqId="TLTLTLLL01" locationTypeEnumId="FLT_PICKLOC" positionId="01"
+                sectionId="TL"/>
+        <org.apache.ofbiz.product.facility.FacilityContactMech contactMechId="CM1007"
+                                                               fromDate="2026-06-11 11:27:57.000"/>
+
+        <org.apache.ofbiz.product.facility.FacilityGroupMember facilityGroupId="OMS_FULFILLMENT"
+                                                               fromDate="2026-06-10 07:00:24.36"/>
+    </org.apache.ofbiz.product.facility.Facility>
+
+    <!-- San Diego Facility -->
+    <org.apache.ofbiz.party.contact.ContactMech contactMechId="CM1008" contactMechTypeId="POSTAL_ADDRESS">
+        <org.apache.ofbiz.party.contact.PostalAddress address1="202 C St" city="San Diego" countryGeoId="USA"
+                                                      createdStamp="2026-06-11 11:27:57.000"
+                                                      createdTxStamp="2026-06-11 11:27:57.000"
+                                                      lastUpdatedStamp="2026-06-11 11:27:57.000"
+                                                      lastUpdatedTxStamp="2026-06-11 11:27:57.000"
+                                                      latitude="32.71570000000" longitude="-117.16110000000"
+                                                      postalCode="92101"
+                                                      stateProvinceGeoId="CA" toName="San Diego"/>
+    </org.apache.ofbiz.party.contact.ContactMech>
+
+    <org.apache.ofbiz.product.facility.Facility
+            facilityId="SanDiego-Julep" facilityName="San Diego" facilityTypeId="RETAIL_STORE" maximumOrderLimit="0"
+            ownerPartyId="10000" postalCode="92101">
+        <org.apache.ofbiz.product.facility.FacilityLocation
+                aisleId="TL" areaId="TL"
+                levelId="LL" locationSeqId="TLTLTLLL01" locationTypeEnumId="FLT_PICKLOC" positionId="01"
+                sectionId="TL"/>
+        <org.apache.ofbiz.product.facility.FacilityContactMech contactMechId="CM1008"
+                                                               fromDate="2026-06-11 11:27:57.000"/>
+
+        <org.apache.ofbiz.product.facility.FacilityGroupMember facilityGroupId="OMS_FULFILLMENT"
+                                                               fromDate="2026-06-10 07:00:24.36"/>
+    </org.apache.ofbiz.product.facility.Facility>
+
+    <org.apache.ofbiz.party.contact.ContactMech contactMechId="CM1100" contactMechTypeId="POSTAL_ADDRESS">
+        <org.apache.ofbiz.party.contact.PostalAddress address1="100 Industrial Dr" city="Hudson" countryGeoId="USA"
+                                                      createdStamp="2026-06-11 11:40:36.000"
+                                                      createdTxStamp="2026-06-11 11:40:36.000"
+                                                      lastUpdatedStamp="2026-06-11 11:40:36.000"
+                                                      lastUpdatedTxStamp="2026-06-11 11:40:36.000"
+                                                      latitude="42.76350000000" longitude="-71.43950000000"
+                                                      postalCode="03051"
+                                                      stateProvinceGeoId="NH" toName="Hudson Warehouse"/>
+    </org.apache.ofbiz.party.contact.ContactMech>
+
+    <org.apache.ofbiz.product.facility.Facility
+            facilityId="Warehouse-Julep" facilityName="Warehouse" facilityTypeId="WAREHOUSE" maximumOrderLimit="40"
+            ownerPartyId="10000" postalCode="03051">
+        <org.apache.ofbiz.product.facility.FacilityContactMech contactMechId="CM1100"
+                                                               fromDate="2026-06-11 11:40:36.000"/>
+
+        <org.apache.ofbiz.product.facility.FacilityGroupMember facilityGroupId="FAC_GRP"
+                                                               fromDate="2026-06-10 07:00:24.36"/>
+    </org.apache.ofbiz.product.facility.Facility>
+
+    <!-- Product Store Facility    -->
+    <org.apache.ofbiz.product.store.ProductStoreFacility facilityId="Austin-Julep" fromDate="2026-06-05 11:40:17.009"
+                                                         productStoreId="ASBT_STORE"/>
+    <org.apache.ofbiz.product.store.ProductStoreFacility facilityId="NewYork-Julep" fromDate="2026-06-05 11:40:17.009"
+                                                         productStoreId="ASBT_STORE"/>
+    <org.apache.ofbiz.product.store.ProductStoreFacility facilityId="LosAngeles-Julep"
+                                                         fromDate="2026-06-05 11:40:17.009"
+                                                         productStoreId="ASBT_STORE"/>
+    <org.apache.ofbiz.product.store.ProductStoreFacility facilityId="Chicago-Julep" fromDate="2026-06-05 11:40:17.009"
+                                                         productStoreId="ASBT_STORE"/>
+    <org.apache.ofbiz.product.store.ProductStoreFacility facilityId="Houston-Julep" fromDate="2026-06-05 11:40:17.009"
+                                                         productStoreId="ASBT_STORE"/>
+    <org.apache.ofbiz.product.store.ProductStoreFacility facilityId="Phoenix-Julep" fromDate="2026-06-05 11:40:17.009"
+                                                         productStoreId="ASBT_STORE"/>
+    <org.apache.ofbiz.product.store.ProductStoreFacility facilityId="Philadelphia-Julep"
+                                                         fromDate="2026-06-05 11:40:17.009"
+                                                         productStoreId="ASBT_STORE"/>
+    <org.apache.ofbiz.product.store.ProductStoreFacility facilityId="SanAntonio-Julep"
+                                                         fromDate="2026-06-05 11:40:17.009"
+                                                         productStoreId="ASBT_STORE"/>
+    <org.apache.ofbiz.product.store.ProductStoreFacility facilityId="SanDiego-Julep" fromDate="2026-06-05 11:40:17.009"
+                                                         productStoreId="ASBT_STORE"/>
+    <org.apache.ofbiz.product.store.ProductStoreFacility facilityId="Warehouse-Julep" fromDate="2026-06-05 11:40:17.009"
+                                                         productStoreId="ASBT_STORE"/>
+
+
+    <!-- Product Store to Product Linking  -->
+    <org.apache.ofbiz.product.catalog.ProdCatalog catalogName="Browse Root Catalog"
+                                                  prodCatalogId="BROWSE_ROOT_CATALOG_JP" useQuickAdd="Y"/>
+
+
+    <org.apache.ofbiz.product.store.ProductStoreCatalog
+            fromDate="2025-01-01 12:00:00.0"
+            prodCatalogId="BROWSE_ROOT_CATALOG_JP" productStoreId="STORE"/>
+
+
+    <org.apache.ofbiz.product.category.ProductCategory categoryName="AS BEAUTY JULEP"
+                                                       productCategoryId="ASBT_JP"
+                                                       productCategoryTypeId="CATALOG_CATEGORY"/>
+
+
+    <org.apache.ofbiz.product.catalog.ProdCatalogCategory
+            fromDate="2026-06-05 11:40:17.016"
+            prodCatalogCategoryTypeId="PCCT_BROWSE_ROOT"
+            prodCatalogId="BROWSE_ROOT_CATALOG_JP" productCategoryId="ASBT_JP"/>
+
+
+    <org.apache.ofbiz.product.category.ProductCategoryMember
+            fromDate="2026-06-06 05:07:55.569"
+            productCategoryId="ASBT_JP"
+            productId="10000"/>
+
+
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              internalName="V_Vitamin E Hydrating Cream Cleanser"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="N" isVirtual="Y"
+                                              productId="10000"
+                                              productName="Vitamin E Hydrating Cream Cleanser"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in">
+
+
+        <GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID" idValue="8693701476375"
+                            fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.category.ProductCategoryMember
+                fromDate="2026-05-11 14:30:00.0"
+                lastUpdatedTxStamp="2026-06-03 10:16:46.365" productCategoryId="ASBT_JP"/>
+
+    </org.apache.ofbiz.product.product.Product>
+
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10001"
+                                              internalName="0203-0027002"
+                                              productName="Vitamin E Hydrating Cream Cleanser"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10001" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="14.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44286947328023"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="0203-0027002" fromDate="2026-06-03 06:41:07.293"/>
+
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <org.apache.ofbiz.product.feature.ProductFeatureType
+            description="Shade" hasTable="N"
+            productFeatureTypeId="COLOR"/>
+    <org.apache.ofbiz.product.feature.ProductFeature
+            description="Vanilla"
+            productFeatureId="JPF1000"
+            productFeatureTypeId="COLOR"/>
+    <org.apache.ofbiz.product.feature.ProductFeature
+            description="Candy"
+            productFeatureId="JPF1001"
+            productFeatureTypeId="COLOR"/>
+    <org.apache.ofbiz.product.feature.ProductFeature
+            description="Matte Magic"
+            productFeatureId="JPF1002"
+            productFeatureTypeId="COLOR"/>
+    <org.apache.ofbiz.product.feature.ProductFeature
+            description="Garden Party"
+            productFeatureId="JPF1003"
+            productFeatureTypeId="COLOR"/>
+    <org.apache.ofbiz.product.feature.ProductFeature
+            description="Bold Basics"
+            productFeatureId="JPF1004"
+            productFeatureTypeId="COLOR"/>
+    <org.apache.ofbiz.product.feature.ProductFeature
+            description="Default Title"
+            productFeatureId="JPF1005"
+            productFeatureTypeId="COLOR"/>
+    <org.apache.ofbiz.product.feature.ProductFeature
+            description="Canyon Rose + Antique Rose"
+            productFeatureId="JPF1006"
+            productFeatureTypeId="COLOR"/>
+    <org.apache.ofbiz.product.feature.ProductFeature
+            description="Vintage Mauve + Velvet Mauve"
+            productFeatureId="JPF1007"
+            productFeatureTypeId="COLOR"/>
+    <org.apache.ofbiz.product.feature.ProductFeature
+            description="Cherry Wood + Rich Black Cherry"
+            productFeatureId="JPF1008"
+            productFeatureTypeId="COLOR"/>
+    <org.apache.ofbiz.product.feature.ProductFeature
+            description="90s Neutral + Sweet Truffle"
+            productFeatureId="JPF1009"
+            productFeatureTypeId="COLOR"/>
+    <org.apache.ofbiz.product.feature.ProductFeature
+            description="Rich Plum + Rich Black Cherry"
+            productFeatureId="JPF1010"
+            productFeatureTypeId="COLOR"/>
+    <org.apache.ofbiz.product.feature.ProductFeature
+            description="Black Cherry + Rich Black Cherry"
+            productFeatureId="JPF1011"
+            productFeatureTypeId="COLOR"/>
+    <org.apache.ofbiz.product.feature.ProductFeature
+            description="Neutral to Sultry"
+            productFeatureId="JPF1012"
+            productFeatureTypeId="COLOR"/>
+    <org.apache.ofbiz.product.feature.ProductFeature
+            description="Cherry Orchid Nudes"
+            productFeatureId="JPF1013"
+            productFeatureTypeId="COLOR"/>
+    <org.apache.ofbiz.product.feature.ProductFeature
+            description="90's Rose Mauve"
+            productFeatureId="JPF1014"
+            productFeatureTypeId="COLOR"/>
+    <org.apache.ofbiz.product.feature.ProductFeature
+            description="Spiced Neutrals"
+            productFeatureId="JPF1015"
+            productFeatureTypeId="COLOR"/>
+
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              internalName="V_Lip Pudding Deep-Hydration Lip Balm"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="N" isVirtual="Y"
+                                              productId="10003"
+                                              productName="Lip Pudding Deep-Hydration Lip Balm"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in">
+
+
+        <GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID" idValue="8752423010327"
+                            fromDate="2026-06-03 06:41:07.293"/>
+
+
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1000"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1001"/>
+
+
+        <org.apache.ofbiz.product.category.ProductCategoryMember
+                fromDate="2026-05-11 14:30:00.0"
+                lastUpdatedTxStamp="2026-06-03 10:16:46.365" productCategoryId="ASBT_JP"/>
+
+    </org.apache.ofbiz.product.product.Product>
+
+    <!-- variant 1 vanilla   -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10004"
+                                              internalName="44740746117143"
+                                              productName="Lip Pudding Deep-Hydration Lip Balm"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Lip_Pudding_PDP_Vanilla_Soldier-Amazon.jpg?v=1773953873">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10003" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="14.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44740746117143"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="0230-0032019" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1000"/>
+
+    </org.apache.ofbiz.product.product.Product>
+    <!--  varient 2 candy   -->
+
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10005"
+                                              internalName="0230-0032019"
+                                              productName="Lip Pudding Deep-Hydration Lip Balm"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Lip_Pudding_PDP_Vanilla_Soldier-Amazon.jpg?v=1773953873">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10003" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="14.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44740746149911"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="0230-0032019" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1001"/>
+
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- 6 PC Eyeshadow 101 Stick Virtual -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in" internalName="6723066462231"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="N" isVirtual="Y"
+                                              productId="10006"
+                                              productName="6 PC Eyeshadow 101 Crème-to-Powder Waterproof Eyeshadow Stick"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in">
+
+        <GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID" idValue="6723066462231"
+                            fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1002"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1003"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1004"/>
+
+        <org.apache.ofbiz.product.category.ProductCategoryMember
+                fromDate="2026-05-11 14:30:00.0"
+                lastUpdatedTxStamp="2026-06-03 10:16:46.365" productCategoryId="ASBT_JP"/>
+
+    </org.apache.ofbiz.product.product.Product>
+
+    <!-- 6 PC Eyeshadow 101 Stick - Variant 1 (Matte Magic) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10007"
+                                              internalName="40561973297175"
+                                              productName="6 PC Eyeshadow 101 Stick - Matte Magic"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep-Eyeshadow1016pcBundle_Matte_-Soldier_Textureshadecomp_UPDATED2024_2.jpg?v=1773246653">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10006" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="72.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="40561973297175"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="6PC-MATTE-BUND"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1002"/>
+    </org.apache.ofbiz.product.product.Product>
+
+    <!-- 6 PC Eyeshadow 101 Stick - Variant 2 (Garden Party) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10008"
+                                              internalName="40104761196567"
+                                              productName="6 PC Eyeshadow 101 Stick - Garden Party"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Eyeshadow_101_Pearl_Shimmer_Sand_Shimmer_Putty_MAtte_Clay_Matte_Rose_Shimmer_Smoky_Amethyst_Shimmer_garden_party_6pc_Soldier_ecom_BG_-ECommerce_JPG.jpg?v=1773246653">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10006" sequenceNum="2"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="72.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="40104761196567"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="1016PC2-Bundle"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1003"/>
+    </org.apache.ofbiz.product.product.Product>
+
+    <!-- 6 PC Eyeshadow 101 Stick - Variant 3 (Bold Basics) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10009"
+                                              internalName="40104761229335"
+                                              productName="6 PC Eyeshadow 101 Stick - Bold Basics"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Eyeshadow101_ChampagneShimmerDEsertMatteTaupeShimmerPuttyMatteBronzeShimmerCocoaShimmer_BoldBasics6pc_Soldier_EcomBG-ECommerce_JPG_1.jpg?v=1773246482">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10006" sequenceNum="3"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="72.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="40104761229335"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="1016PC1-Bundle"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1004"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- Length Matters & Lip Pudding Duo Virtual -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in" internalName="8832228720663"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="N" isVirtual="Y"
+                                              productId="10010"
+                                              productName="Length Matters and Lip Pudding Duo"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in">
+
+        <GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID" idValue="8832228720663"
+                            fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1000"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1001"/>
+
+        <org.apache.ofbiz.product.category.ProductCategoryMember
+                fromDate="2026-05-11 14:30:00.0"
+                lastUpdatedTxStamp="2026-06-03 10:16:46.365" productCategoryId="ASBT_JP"/>
+
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- Length Matters & Lip Pudding Duo - Variant (Vanilla) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10011"
+                                              internalName="45150905958423"
+                                              productName="Length Matters and Lip Pudding Duo - Vanilla"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/lengthmatterslippudding.jpg?v=1779294970">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10010" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="14.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="45150905958423"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="LENGTH-VAN" fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1000"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- Length Matters & Lip Pudding Duo - Variant (Candy) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10012"
+                                              internalName="45150905991191"
+                                              productName="Length Matters and Lip Pudding Duo - Candy"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/lengthmatterslippudding.jpg?v=1779294970">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10010" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="14.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="45150905991191"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="LENGTH-CAN" fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1001"/>
+    </org.apache.ofbiz.product.product.Product>
+
+    <!--    Agent Generated data -->
+    <!-- Inner Radiance Shimmering Eyeshadow Set (3 PC) Virtual -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in" internalName="6889922002967"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="N" isVirtual="Y"
+                                              productId="10013"
+                                              productName="Inner Radiance Shimmering Eyeshadow Set (3 PC)"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in">
+
+        <GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID" idValue="6889922002967"
+                            fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1005"/>
+
+        <org.apache.ofbiz.product.category.ProductCategoryMember
+                fromDate="2026-05-11 14:30:00.0"
+                lastUpdatedTxStamp="2026-06-03 10:16:46.365" productCategoryId="ASBT_JP"/>
+
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- Inner Radiance Shimmering Eyeshadow Set (3 PC) - Variant (Default Title) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10014"
+                                              internalName="40569219776535"
+                                              productName="Inner Radiance Shimmering Eyeshadow Set (3 PC) - Default Title"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Duo_MascaraEvergreenBundle_PearlShimmer_TaupeShimmer_LengthMatters-ECommerce_JPG_b5f325af-7f00-4fba-a8e3-81743b2567e0.jpg?v=1762444818">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10013" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="40.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="40569219776535"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="DUOMASC-BUND-2"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- The Perfect Pair Duo Virtual -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in" internalName="8750013087767"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="N" isVirtual="Y"
+                                              productId="10015"
+                                              productName="The Perfect Pair Duo"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in">
+
+        <GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID" idValue="8750013087767"
+                            fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1006"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1007"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1008"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1009"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1010"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1011"/>
+
+        <org.apache.ofbiz.product.category.ProductCategoryMember
+                fromDate="2026-05-11 14:30:00.0"
+                lastUpdatedTxStamp="2026-06-03 10:16:46.365" productCategoryId="ASBT_JP"/>
+
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- The Perfect Pair Duo - Variant (Canyon Rose + Antique Rose) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10016"
+                                              internalName="44731590017047"
+                                              productName="The Perfect Pair Duo - Canyon Rose + Antique Rose"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_Canyon_Rose_Antique_Rose.jpg?v=1774370638">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10015" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="22.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44731590017047"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="BALM-DUO-CRAR"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1006"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- The Perfect Pair Duo - Variant (Vintage Mauve + Velvet Mauve) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10017"
+                                              internalName="44731590049815"
+                                              productName="The Perfect Pair Duo - Vintage Mauve + Velvet Mauve"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_90s_Neutral_Sweet_Truffle.jpg?v=1774363021">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10015" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="22.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44731590049815"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="BALM-DUO-VMVM"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1007"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- The Perfect Pair Duo - Variant (Cherry Wood + Rich Black Cherry) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10018"
+                                              internalName="44731590082583"
+                                              productName="The Perfect Pair Duo - Cherry Wood + Rich Black Cherry"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_Black_Cherry_Rich_Black_Cherry.jpg?v=1774293857">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10015" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="22.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44731590082583"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="BALM-DUO-CWRBC"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1008"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- The Perfect Pair Duo - Variant (90s Neutral + Sweet Truffle) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10019"
+                                              internalName="44731590115351"
+                                              productName="The Perfect Pair Duo - 90s Neutral + Sweet Truffle"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_90s_Neutral_Sweet_Truffle_25e6b205-5c50-4e1f-aa6b-bb5748c82e5d.jpg?v=1774294016">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10015" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="22.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44731590115351"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="BALM-DUO-90ST"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1009"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- The Perfect Pair Duo - Variant (Rich Plum + Rich Black Cherry) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10020"
+                                              internalName="44731590148119"
+                                              productName="The Perfect Pair Duo - Rich Plum + Rich Black Cherry"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_Rich_Plum_Rich_Black_Cherry.jpg?v=1774294082">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10015" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="22.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44731590148119"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="BALM-DUO-RPRBC"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1010"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- The Perfect Pair Duo - Variant (Black Cherry + Rich Black Cherry) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10021"
+                                              internalName="44731590180887"
+                                              productName="The Perfect Pair Duo - Black Cherry + Rich Black Cherry"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_Black_Cherry_Rich_Black_Cherry_805b2221-2109-49d4-95ab-6abb01164a05.jpg?v=1774294059">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10015" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="22.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44731590180887"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="BALM-DUO-BCRBC"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1011"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- It’s Balm Moisturizing Lip Color Trios Virtual -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in" internalName="8640246317079"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="N" isVirtual="Y"
+                                              productId="10022"
+                                              productName="It’s Balm Moisturizing Lip Color Trios"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in">
+
+        <GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID" idValue="8640246317079"
+                            fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1012"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1013"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1014"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1015"/>
+
+        <org.apache.ofbiz.product.category.ProductCategoryMember
+                fromDate="2026-05-11 14:30:00.0"
+                lastUpdatedTxStamp="2026-06-03 10:16:46.365" productCategoryId="ASBT_JP"/>
+
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- It’s Balm Moisturizing Lip Color Trios - Variant (Neutral to Sultry) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10023"
+                                              internalName="44091067006999"
+                                              productName="It’s Balm Moisturizing Lip Color Trios - Neutral to Sultry"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Holiday2024_Bundle_It_sBalmTrio_EcommSoldier-min.jpg?v=1762446047">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10022" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="34.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44091067006999"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="H24-ITBALMTRIO"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1012"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- It’s Balm Moisturizing Lip Color Trios - Variant (Cherry Orchid Nudes) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10024"
+                                              internalName="44091070316567"
+                                              productName="It’s Balm Moisturizing Lip Color Trios - Cherry Orchid Nudes"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep-It_sBalmTrio-Version1-CherryWood_CashmereNude_DustyOrchidShimmer_ECommSoldier-ECommerce_JPG.jpg?v=1762445218">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10022" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="34.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44091070316567"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="9993-9993021" fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1013"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- It’s Balm Moisturizing Lip Color Trios - Variant (90's Rose Mauve) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10025"
+                                              internalName="44091070349335"
+                                              productName="It’s Balm Moisturizing Lip Color Trios - 90's Rose Mauve"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_It_sBalmTrioVer.2_EcomSoldier_OverheadShot-ECommerce_JPG.jpg?v=1762445216">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10022" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="34.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44091070349335"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="ITS-BALM-TRIO-C"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1014"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- It’s Balm Moisturizing Lip Color Trios - Variant (Spiced Neutrals) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10026"
+                                              internalName="44091106820119"
+                                              productName="It’s Balm Moisturizing Lip Color Trios - Spiced Neutrals"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Its_Balm_Tiktok_Shop_Bundle_Cinnamon_Raisin_Rich_Plum_Cashmere_Nude_Soldier-On_White.jpg?v=1765482718">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10022" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="34.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44091106820119"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="BALM-TRIO-TTS"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1015"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- Simply Subtle Natural Eyeshadow Set (3 PC) Virtual -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in" internalName="6889922101271"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="N" isVirtual="Y"
+                                              productId="10027"
+                                              productName="Simply Subtle Natural Eyeshadow Set (3 PC)"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in">
+
+        <GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID" idValue="6889922101271"
+                            fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1005"/>
+
+        <org.apache.ofbiz.product.category.ProductCategoryMember
+                fromDate="2026-05-11 14:30:00.0"
+                lastUpdatedTxStamp="2026-06-03 10:16:46.365" productCategoryId="ASBT_JP"/>
+
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- Simply Subtle Natural Eyeshadow Set (3 PC) - Variant (Default Title) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10028"
+                                              internalName="40569220759575"
+                                              productName="Simply Subtle Natural Eyeshadow Set (3 PC) - Default Title"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Duo_MascaraEvergreenBundle_StoneMatte_PuttyMatte_LengthMatters-ECommerce_JPG_65b8ccc9-b59c-4555-9c1c-14929e19d6ad.jpg?v=1762444819">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10027" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="40.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="40569220759575"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="DUOMASC-BUND-1"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- So Plush Glossy Lip Oil (Rosy Glow) Virtual -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in" internalName="8693685780503"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="N" isVirtual="Y"
+                                              productId="10029"
+                                              productName="So Plush Glossy Lip Oil (Rosy Glow)"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in">
+
+        <GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID" idValue="8693685780503"
+                            fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1005"/>
+
+        <org.apache.ofbiz.product.category.ProductCategoryMember
+                fromDate="2026-05-11 14:30:00.0"
+                lastUpdatedTxStamp="2026-06-03 10:16:46.365" productCategoryId="ASBT_JP"/>
+
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- So Plush Glossy Lip Oil (Rosy Glow) - Variant (Default Title) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10030"
+                                              internalName="44286228070423"
+                                              productName="So Plush Glossy Lip Oil (Rosy Glow) - Default Title"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_So_Plush_Glossy_Lip_Oil_Soldier_Rose_Garden_2x-ECommerce_JPG.jpg?v=1770665185">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10029" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="8.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44286228070423"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="0230-0039002" fromDate="2026-06-03 06:41:07.293"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- Length Matters Mascara Virtual -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in" internalName="8693702295575"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="N" isVirtual="Y"
+                                              productId="10031"
+                                              productName="Length Matters Mascara"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in">
+
+        <GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID" idValue="8693702295575"
+                            fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1005"/>
+
+        <org.apache.ofbiz.product.category.ProductCategoryMember
+                fromDate="2026-05-11 14:30:00.0"
+                lastUpdatedTxStamp="2026-06-03 10:16:46.365" productCategoryId="ASBT_JP"/>
+
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- Length Matters Mascara - Variant (Default Title) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10032"
+                                              internalName="44287018401815"
+                                              productName="Length Matters Mascara - Default Title"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/products/Julep_LengthMatters_OverheadShot-ECommerce_JPG.jpg?v=1762441302">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10031" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="15.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44287018401815"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="0223-0009002" fromDate="2026-06-03 06:41:07.293"/>
+    </org.apache.ofbiz.product.product.Product>
+
+    <!-- Length Matters & Lip Pudding Duo Virtual -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in" internalName="8832228720663"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="N" isVirtual="Y"
+                                              productId="10010"
+                                              productName="Length Matters and Lip Pudding Duo"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in">
+
+        <GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID" idValue="8832228720663"
+                            fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1000"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1001"/>
+
+        <org.apache.ofbiz.product.category.ProductCategoryMember
+                fromDate="2026-05-11 14:30:00.0"
+                lastUpdatedTxStamp="2026-06-03 10:16:46.365" productCategoryId="ASBT_JP"/>
+
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- Length Matters & Lip Pudding Duo - Variant (Vanilla) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10011"
+                                              internalName="45150905958423"
+                                              productName="Length Matters and Lip Pudding Duo - Vanilla"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/lengthmatterslippudding.jpg?v=1779294970">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10010" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="14.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="45150905958423"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="LENGTH-VAN" fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1000"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- Length Matters & Lip Pudding Duo - Variant (Candy) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10012"
+                                              internalName="45150905991191"
+                                              productName="Length Matters and Lip Pudding Duo - Candy"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/lengthmatterslippudding.jpg?v=1779294970">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10010" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="14.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="45150905991191"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="LENGTH-CAN" fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1001"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- Inner Radiance Shimmering Eyeshadow Set (3 PC) Virtual -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in" internalName="6889922002967"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="N" isVirtual="Y"
+                                              productId="10013"
+                                              productName="Inner Radiance Shimmering Eyeshadow Set (3 PC)"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in">
+
+        <GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID" idValue="6889922002967"
+                            fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1005"/>
+
+        <org.apache.ofbiz.product.category.ProductCategoryMember
+                fromDate="2026-05-11 14:30:00.0"
+                lastUpdatedTxStamp="2026-06-03 10:16:46.365" productCategoryId="ASBT_JP"/>
+
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- Inner Radiance Shimmering Eyeshadow Set (3 PC) - Variant (Default Title) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10014"
+                                              internalName="40569219776535"
+                                              productName="Inner Radiance Shimmering Eyeshadow Set (3 PC) - Default Title"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Duo_MascaraEvergreenBundle_PearlShimmer_TaupeShimmer_LengthMatters-ECommerce_JPG_b5f325af-7f00-4fba-a8e3-81743b2567e0.jpg?v=1762444818">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10013" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="40.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="40569219776535"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="DUOMASC-BUND-2"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- The Perfect Pair Duo Virtual -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in" internalName="8750013087767"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="N" isVirtual="Y"
+                                              productId="10015"
+                                              productName="The Perfect Pair Duo"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in">
+
+        <GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID" idValue="8750013087767"
+                            fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1006"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1007"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1008"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1009"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1010"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1011"/>
+
+        <org.apache.ofbiz.product.category.ProductCategoryMember
+                fromDate="2026-05-11 14:30:00.0"
+                lastUpdatedTxStamp="2026-06-03 10:16:46.365" productCategoryId="ASBT_JP"/>
+
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- The Perfect Pair Duo - Variant (Canyon Rose + Antique Rose) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10016"
+                                              internalName="44731590017047"
+                                              productName="The Perfect Pair Duo - Canyon Rose + Antique Rose"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_Canyon_Rose_Antique_Rose.jpg?v=1774370638">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10015" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="22.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44731590017047"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="BALM-DUO-CRAR"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1006"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- The Perfect Pair Duo - Variant (Vintage Mauve + Velvet Mauve) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10017"
+                                              internalName="44731590049815"
+                                              productName="The Perfect Pair Duo - Vintage Mauve + Velvet Mauve"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_90s_Neutral_Sweet_Truffle.jpg?v=1774363021">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10015" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="22.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44731590049815"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="BALM-DUO-VMVM"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1007"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- The Perfect Pair Duo - Variant (Cherry Wood + Rich Black Cherry) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10018"
+                                              internalName="44731590082583"
+                                              productName="The Perfect Pair Duo - Cherry Wood + Rich Black Cherry"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_Black_Cherry_Rich_Black_Cherry.jpg?v=1774293857">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10015" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="22.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44731590082583"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="BALM-DUO-CWRBC"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1008"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- The Perfect Pair Duo - Variant (90s Neutral + Sweet Truffle) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10019"
+                                              internalName="44731590115351"
+                                              productName="The Perfect Pair Duo - 90s Neutral + Sweet Truffle"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_90s_Neutral_Sweet_Truffle_25e6b205-5c50-4e1f-aa6b-bb5748c82e5d.jpg?v=1774294016">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10015" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="22.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44731590115351"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="BALM-DUO-90ST"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1009"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- The Perfect Pair Duo - Variant (Rich Plum + Rich Black Cherry) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10020"
+                                              internalName="44731590148119"
+                                              productName="The Perfect Pair Duo - Rich Plum + Rich Black Cherry"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_Rich_Plum_Rich_Black_Cherry.jpg?v=1774294082">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10015" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="22.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44731590148119"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="BALM-DUO-RPRBC"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1010"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- The Perfect Pair Duo - Variant (Black Cherry + Rich Black Cherry) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10021"
+                                              internalName="44731590180887"
+                                              productName="The Perfect Pair Duo - Black Cherry + Rich Black Cherry"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_Black_Cherry_Rich_Black_Cherry_805b2221-2109-49d4-95ab-6abb01164a05.jpg?v=1774294059">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10015" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="22.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44731590180887"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="BALM-DUO-BCRBC"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1011"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- It’s Balm Moisturizing Lip Color Trios Virtual -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in" internalName="8640246317079"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="N" isVirtual="Y"
+                                              productId="10022"
+                                              productName="It’s Balm Moisturizing Lip Color Trios"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in">
+
+        <GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID" idValue="8640246317079"
+                            fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1012"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1013"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1014"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1015"/>
+
+        <org.apache.ofbiz.product.category.ProductCategoryMember
+                fromDate="2026-05-11 14:30:00.0"
+                lastUpdatedTxStamp="2026-06-03 10:16:46.365" productCategoryId="ASBT_JP"/>
+
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- It’s Balm Moisturizing Lip Color Trios - Variant (Neutral to Sultry) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10023"
+                                              internalName="44091067006999"
+                                              productName="It’s Balm Moisturizing Lip Color Trios - Neutral to Sultry"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Holiday2024_Bundle_It_sBalmTrio_EcommSoldier-min.jpg?v=1762446047">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10022" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="34.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44091067006999"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="H24-ITBALMTRIO"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1012"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- It’s Balm Moisturizing Lip Color Trios - Variant (Cherry Orchid Nudes) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10024"
+                                              internalName="44091070316567"
+                                              productName="It’s Balm Moisturizing Lip Color Trios - Cherry Orchid Nudes"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep-It_sBalmTrio-Version1-CherryWood_CashmereNude_DustyOrchidShimmer_ECommSoldier-ECommerce_JPG.jpg?v=1762445218">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10022" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="34.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44091070316567"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="9993-9993021" fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1013"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- It’s Balm Moisturizing Lip Color Trios - Variant (90's Rose Mauve) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10025"
+                                              internalName="44091070349335"
+                                              productName="It’s Balm Moisturizing Lip Color Trios - 90's Rose Mauve"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_It_sBalmTrioVer.2_EcomSoldier_OverheadShot-ECommerce_JPG.jpg?v=1762445216">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10022" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="34.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44091070349335"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="ITS-BALM-TRIO-C"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1014"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- It’s Balm Moisturizing Lip Color Trios - Variant (Spiced Neutrals) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10026"
+                                              internalName="44091106820119"
+                                              productName="It’s Balm Moisturizing Lip Color Trios - Spiced Neutrals"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Its_Balm_Tiktok_Shop_Bundle_Cinnamon_Raisin_Rich_Plum_Cashmere_Nude_Soldier-On_White.jpg?v=1765482718">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10022" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="34.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44091106820119"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="BALM-TRIO-TTS"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="STANDARD_FEATURE"
+                                                             productFeatureId="JPF1015"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- Simply Subtle Natural Eyeshadow Set (3 PC) Virtual -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in" internalName="6889922101271"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="N" isVirtual="Y"
+                                              productId="10027"
+                                              productName="Simply Subtle Natural Eyeshadow Set (3 PC)"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in">
+
+        <GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID" idValue="6889922101271"
+                            fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1005"/>
+
+        <org.apache.ofbiz.product.category.ProductCategoryMember
+                fromDate="2026-05-11 14:30:00.0"
+                lastUpdatedTxStamp="2026-06-03 10:16:46.365" productCategoryId="ASBT_JP"/>
+
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- Simply Subtle Natural Eyeshadow Set (3 PC) - Variant (Default Title) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10028"
+                                              internalName="40569220759575"
+                                              productName="Simply Subtle Natural Eyeshadow Set (3 PC) - Default Title"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Duo_MascaraEvergreenBundle_StoneMatte_PuttyMatte_LengthMatters-ECommerce_JPG_65b8ccc9-b59c-4555-9c1c-14929e19d6ad.jpg?v=1762444819">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10027" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="40.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="40569220759575"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="DUOMASC-BUND-1"
+                                                             fromDate="2026-06-03 06:41:07.293"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- So Plush Glossy Lip Oil (Rosy Glow) Virtual -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in" internalName="8693685780503"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="N" isVirtual="Y"
+                                              productId="10029"
+                                              productName="So Plush Glossy Lip Oil (Rosy Glow)"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in">
+
+        <GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID" idValue="8693685780503"
+                            fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1005"/>
+
+        <org.apache.ofbiz.product.category.ProductCategoryMember
+                fromDate="2026-05-11 14:30:00.0"
+                lastUpdatedTxStamp="2026-06-03 10:16:46.365" productCategoryId="ASBT_JP"/>
+
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- So Plush Glossy Lip Oil (Rosy Glow) - Variant (Default Title) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10030"
+                                              internalName="44286228070423"
+                                              productName="So Plush Glossy Lip Oil (Rosy Glow) - Default Title"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_So_Plush_Glossy_Lip_Oil_Soldier_Rose_Garden_2x-ECommerce_JPG.jpg?v=1770665185">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10029" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="8.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44286228070423"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="0230-0039002" fromDate="2026-06-03 06:41:07.293"/>
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- Length Matters Mascara Virtual -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in" internalName="8693702295575"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="N" isVirtual="Y"
+                                              productId="10031"
+                                              productName="Length Matters Mascara"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in">
+
+        <GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID" idValue="8693702295575"
+                            fromDate="2026-06-03 06:41:07.293"/>
+        <org.apache.ofbiz.product.feature.ProductFeatureAppl fromDate="2026-06-08 01:23:00.899"
+                                                             productFeatureApplTypeId="SELECTABLE_FEATURE"
+                                                             productFeatureId="JPF1005"/>
+
+        <org.apache.ofbiz.product.category.ProductCategoryMember
+                fromDate="2026-05-11 14:30:00.0"
+                lastUpdatedTxStamp="2026-06-03 10:16:46.365" productCategoryId="ASBT_JP"/>
+
+    </org.apache.ofbiz.product.product.Product>
+
+
+    <!-- Length Matters Mascara - Variant (Default Title) -->
+    <org.apache.ofbiz.product.product.Product billOfMaterialLevel="0" brandName="Julep" chargeShipping="Y"
+                                              depthUomId="LEN_in" heightUomId="LEN_in"
+                                              inventoryItemTypeId="NON_SERIAL_INV_ITEM" isVariant="Y" isVirtual="N"
+                                              productId="10032"
+                                              internalName="44287018401815"
+                                              productName="Length Matters Mascara - Default Title"
+                                              productTypeId="FINISHED_GOOD" taxable="Y"
+                                              weightUomId="WT_lb" widthUomId="LEN_in"
+                                              detailImageUrl="https://cdn.shopify.com/s/files/1/0022/2878/1091/products/Julep_LengthMatters_OverheadShot-ECommerce_JPG.jpg?v=1762441302">
+
+        <org.apache.ofbiz.product.product.ProductAssoc
+                fromDate="2026-06-03 06:41:07.293"
+                productAssocTypeId="PRODUCT_VARIANT"
+                productIdTo="10031" sequenceNum="1"/>
+
+        <org.apache.ofbiz.product.price.ProductPrice
+                productStoreGroupId="AS_BEAUTY_GROUP"
+                currencyUomId="USD"
+                price="15.00"
+                productPricePurposeId="PURCHASE" productPriceTypeId="LIST_PRICE" fromDate="2026-06-03 06:41:07.293"/>
+
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_ID"
+                                                             fromDate="2026-06-03 06:41:07.293"
+                                                             idValue="44287018401815"/>
+        <org.apache.ofbiz.product.product.GoodIdentification goodIdentificationTypeId="SHOPIFY_PROD_SKU"
+                                                             idValue="0223-0009002" fromDate="2026-06-03 06:41:07.293"/>
+    </org.apache.ofbiz.product.product.Product>
+
+</entity-facade-xml>

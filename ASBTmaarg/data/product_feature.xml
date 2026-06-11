@@ -1,0 +1,153 @@
+<?xml version="1.0" ?>
+<entity-facade-xml type="seed">
+
+
+    
+<org.apache.ofbiz.product.feature.ProductFeature description="90's Rose Mauve" productFeatureId="PF10101"
+                                                 productFeatureTypeId="COLOR"/>
+<org.apache.ofbiz.product.feature.ProductFeature description="90s Neutral + Sweet Truffle" productFeatureId="PF10102"
+                                                 productFeatureTypeId="COLOR"/>
+<org.apache.ofbiz.product.feature.ProductFeature description="Black Cherry + Rich Black Cherry"
+                                                 productFeatureId="PF10103" productFeatureTypeId="COLOR"/>
+<org.apache.ofbiz.product.feature.ProductFeature description="Bold Basics" productFeatureId="PF10104"
+                                                 productFeatureTypeId="COLOR"/>
+<org.apache.ofbiz.product.feature.ProductFeature description="Candy" productFeatureId="PF10105"
+                                                 productFeatureTypeId="COLOR"/>
+<org.apache.ofbiz.product.feature.ProductFeature description="Canyon Rose + Antique Rose" productFeatureId="PF10106"
+                                                 productFeatureTypeId="COLOR"/>
+<org.apache.ofbiz.product.feature.ProductFeature description="Cherry Orchid Nudes" productFeatureId="PF10107"
+                                                 productFeatureTypeId="COLOR"/>
+<org.apache.ofbiz.product.feature.ProductFeature description="Cherry Wood + Rich Black Cherry"
+                                                 productFeatureId="PF10108" productFeatureTypeId="COLOR"/>
+<org.apache.ofbiz.product.feature.ProductFeature description="Garden Party" productFeatureId="PF10109"
+                                                 productFeatureTypeId="COLOR"/>
+<org.apache.ofbiz.product.feature.ProductFeature description="Matte Magic" productFeatureId="PF10110"
+                                                 productFeatureTypeId="COLOR"/>
+<org.apache.ofbiz.product.feature.ProductFeature description="Neutral to Sultry" productFeatureId="PF10111"
+                                                 productFeatureTypeId="COLOR"/>
+<org.apache.ofbiz.product.feature.ProductFeature description="Rich Plum + Rich Black Cherry" productFeatureId="PF10112"
+                                                 productFeatureTypeId="COLOR"/>
+<org.apache.ofbiz.product.feature.ProductFeature description="Spiced Neutrals" productFeatureId="PF10113"
+                                                 productFeatureTypeId="COLOR"/>
+<org.apache.ofbiz.product.feature.ProductFeature description="Vanilla" productFeatureId="PF10114"
+                                                 productFeatureTypeId="COLOR"/>
+<org.apache.ofbiz.product.feature.ProductFeature description="Vintage Mauve + Velvet Mauve" productFeatureId="PF10115"
+                                                 productFeatureTypeId="COLOR"/>
+                                                 
+<org.apache.ofbiz.product.feature.ProductFeature
+        description="Vintage Mauve"
+        productFeatureId="PF10000"
+        productFeatureTypeId="COLOR"/>
+
+<org.apache.ofbiz.product.feature.ProductFeature
+        description="Cherry Wood"
+        productFeatureId="PF10001"
+        productFeatureTypeId="COLOR"/>
+
+<org.apache.ofbiz.product.feature.ProductFeature
+        description="Canyon Rose"
+        productFeatureId="PF10002"
+        productFeatureTypeId="COLOR"/>
+
+<org.apache.ofbiz.product.feature.ProductFeature
+        description="Black Cherry"
+        productFeatureId="PF10003"
+        productFeatureTypeId="COLOR"/>
+
+<org.apache.ofbiz.product.feature.ProductFeature
+        description="Rich Plum"
+        productFeatureId="PF10004"
+        productFeatureTypeId="COLOR"/>
+
+<org.apache.ofbiz.product.feature.ProductFeature
+        description="90s Neutral"
+        productFeatureId="PF10005"
+        productFeatureTypeId="COLOR"/>
+
+<org.apache.ofbiz.product.feature.ProductFeature
+        description="Brown Sugar"
+        productFeatureId="PF10006"
+        productFeatureTypeId="COLOR"/>
+
+<org.apache.ofbiz.product.feature.ProductFeature
+        description="Island Blossom"
+        productFeatureId="PF10007"
+        productFeatureTypeId="COLOR"/>
+
+<org.apache.ofbiz.product.feature.ProductFeature
+        description="Dusty Orchid"
+        productFeatureId="PF10008"
+        productFeatureTypeId="COLOR"/>
+
+<org.apache.ofbiz.product.feature.ProductFeature
+        description="Brandy Wine"
+        productFeatureId="PF10009"
+        productFeatureTypeId="COLOR"/>
+
+<org.apache.ofbiz.product.feature.ProductFeature
+        description="Sweet Sangria"
+        productFeatureId="PF10010"
+        productFeatureTypeId="COLOR"/>
+
+<org.apache.ofbiz.product.feature.ProductFeature
+        description="Cashmere Nude"
+        productFeatureId="PF10011"
+        productFeatureTypeId="COLOR"/>
+
+<org.apache.ofbiz.product.feature.ProductFeature
+        description="Cinnamon Raisin"
+        productFeatureId="PF10012"
+        productFeatureTypeId="COLOR"/>
+
+<org.apache.ofbiz.product.feature.ProductFeature
+        description="Grape Jelly"
+        productFeatureId="PF10013"
+        productFeatureTypeId="COLOR"/>
+
+<org.apache.ofbiz.product.feature.ProductFeature
+        description="That's Sweet"
+        productFeatureId="PF10014"
+        productFeatureTypeId="COLOR"/>
+
+<org.apache.ofbiz.product.feature.ProductFeature
+        description="Velvet Nude"
+        productFeatureId="PF10015"
+        productFeatureTypeId="COLOR"/>
+
+<org.apache.ofbiz.product.feature.ProductFeature
+        description="Vamped Up"
+        productFeatureId="PF10016"
+        productFeatureTypeId="COLOR"/>
+
+<org.apache.ofbiz.product.feature.ProductFeature
+        description="Iridescence"
+        productFeatureId="PF10017"
+        productFeatureTypeId="COLOR"/>
+
+<org.apache.ofbiz.product.feature.ProductFeature
+        description="Nectar Pink Creme"
+        productFeatureId="PF10018"
+        productFeatureTypeId="COLOR"/>
+
+<org.apache.ofbiz.product.feature.ProductFeature
+        description="Almond Nude"
+        productFeatureId="PF10019"
+        productFeatureTypeId="COLOR"/>
+
+<org.apache.ofbiz.product.feature.ProductFeature
+        description="Burnt Sienna"
+        productFeatureId="PF10020"
+        productFeatureTypeId="COLOR"/>
+
+<org.apache.ofbiz.product.feature.ProductFeature
+        description="Sahara Sunset"
+        productFeatureId="PF10021"
+        productFeatureTypeId="COLOR"/>
+
+<org.apache.ofbiz.product.feature.ProductFeature
+        description="Roasted Peach"
+        productFeatureId="PF10022"
+        productFeatureTypeId="COLOR"/>
+
+</entity-facade-xml>
+

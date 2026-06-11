@@ -1,0 +1,1804 @@
+{
+    "products": [
+        {
+            "id": 8832228720663,
+            "title": "Length Matters & Lip Pudding Duo",
+            "handle": "lip-pudding-deep-hydration-lip-balm-copy",
+            "body_html": "",
+            "published_at": "2026-05-20T12:59:26-04:00",
+            "created_at": "2026-05-19T14:57:45-04:00",
+            "updated_at": "2026-06-09T09:14:08-04:00",
+            "vendor": "Julep",
+            "product_type": "Lip Balm",
+            "tags": [],
+            "variants": [
+                {
+                    "id": 45150905958423,
+                    "title": "Vanilla",
+                    "option1": "Vanilla",
+                    "option2": null,
+                    "option3": null,
+                    "sku": "LENGTH-VAN",
+                    "requires_shipping": true,
+                    "taxable": true,
+                    "featured_image": {
+                        "id": 38757792350231,
+                        "product_id": 8832228720663,
+                        "position": 1,
+                        "created_at": "2026-05-20T12:36:08-04:00",
+                        "updated_at": "2026-05-20T12:36:10-04:00",
+                        "alt": null,
+                        "width": 918,
+                        "height": 1000,
+                        "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/lengthmatterslippudding.jpg?v=1779294970",
+                        "variant_ids": [
+                            45150905958423,
+                            45150905991191
+                        ]
+                    },
+                    "available": true,
+                    "price": "14.00",
+                    "grams": 0,
+                    "compare_at_price": null,
+                    "position": 1,
+                    "product_id": 8832228720663,
+                    "created_at": "2026-05-19T14:57:45-04:00",
+                    "updated_at": "2026-06-09T09:14:08-04:00"
+                },
+                {
+                    "id": 45150905991191,
+                    "title": "Candy",
+                    "option1": "Candy",
+                    "option2": null,
+                    "option3": null,
+                    "sku": "LENGTH-CAN",
+                    "requires_shipping": true,
+                    "taxable": true,
+                    "featured_image": {
+                        "id": 38757792350231,
+                        "product_id": 8832228720663,
+                        "position": 1,
+                        "created_at": "2026-05-20T12:36:08-04:00",
+                        "updated_at": "2026-05-20T12:36:10-04:00",
+                        "alt": null,
+                        "width": 918,
+                        "height": 1000,
+                        "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/lengthmatterslippudding.jpg?v=1779294970",
+                        "variant_ids": [
+                            45150905958423,
+                            45150905991191
+                        ]
+                    },
+                    "available": true,
+                    "price": "14.00",
+                    "grams": 0,
+                    "compare_at_price": null,
+                    "position": 2,
+                    "product_id": 8832228720663,
+                    "created_at": "2026-05-19T14:57:45-04:00",
+                    "updated_at": "2026-06-09T09:14:08-04:00"
+                }
+            ],
+            "images": [
+                {
+                    "id": 38757792350231,
+                    "created_at": "2026-05-20T12:36:08-04:00",
+                    "position": 1,
+                    "updated_at": "2026-05-20T12:36:10-04:00",
+                    "product_id": 8832228720663,
+                    "variant_ids": [
+                        45150905958423,
+                        45150905991191
+                    ],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/lengthmatterslippudding.jpg?v=1779294970",
+                    "width": 918,
+                    "height": 1000
+                },
+                {
+                    "id": 38440721874967,
+                    "created_at": "2026-03-19T16:56:48-04:00",
+                    "position": 2,
+                    "updated_at": "2026-03-19T16:57:53-04:00",
+                    "product_id": 8832228720663,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_LipPudding_PDP_ShadeDescription.jpg?v=1773953873",
+                    "width": 2048,
+                    "height": 2048
+                },
+                {
+                    "id": 38440721809431,
+                    "created_at": "2026-03-19T16:56:48-04:00",
+                    "position": 3,
+                    "updated_at": "2026-03-19T16:57:53-04:00",
+                    "product_id": 8832228720663,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_LipPudding_PDP_ShadeGroupBA.jpg?v=1773953873",
+                    "width": 2048,
+                    "height": 2048
+                },
+                {
+                    "id": 30528652640279,
+                    "created_at": "2023-04-14T10:32:09-04:00",
+                    "position": 4,
+                    "updated_at": "2023-05-31T16:58:59-04:00",
+                    "product_id": 8832228720663,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/products/Julep_LengthMatters_Before_After-ECommerce_JPG.jpg?v=1685566739",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 30528652574743,
+                    "created_at": "2023-04-14T10:32:07-04:00",
+                    "position": 5,
+                    "updated_at": "2023-09-22T18:16:54-04:00",
+                    "product_id": 8832228720663,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/products/Julep_LengthMatters_ProductBenefitIngredientCallout-ECommerce_JPG_1.jpg?v=1695421014",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 38440719777815,
+                    "created_at": "2026-03-19T16:55:39-04:00",
+                    "position": 6,
+                    "updated_at": "2026-03-19T16:57:53-04:00",
+                    "product_id": 8832228720663,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Lip_Pudding_PDP_Vanilla_Soldier-Amazon.jpg?v=1773953873",
+                    "width": 2048,
+                    "height": 2048
+                },
+                {
+                    "id": 38440719908887,
+                    "created_at": "2026-03-19T16:55:42-04:00",
+                    "position": 7,
+                    "updated_at": "2026-03-19T16:57:53-04:00",
+                    "product_id": 8832228720663,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Lip_Pudding_PDP_Candy_Soldier-Amazon.jpg?v=1773953873",
+                    "width": 2048,
+                    "height": 2048
+                }
+            ],
+            "options": [
+                {
+                    "name": "Shade",
+                    "position": 1,
+                    "values": [
+                        "Vanilla",
+                        "Candy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 6889922002967,
+            "title": "Inner Radiance Shimmering Eyeshadow Set (3 PC)",
+            "handle": "inner-radiance-3pc-set",
+            "body_html": "This 3PC kit includes all you need to easily enhance your eyes for an enhanced, natural look for everyday. It features two beautiful Eyeshadow 101 shades that apply and blend like a dream, along with a fan-fave mascara for instantly longer lashes.",
+            "published_at": "2026-04-06T22:45:57-04:00",
+            "created_at": "2023-05-15T14:35:47-04:00",
+            "updated_at": "2026-06-09T09:14:08-04:00",
+            "vendor": "Julep",
+            "product_type": "Bundle",
+            "tags": [
+                "4 piece",
+                "Category_Eyes",
+                "Category_Makeup",
+                "Category_Value Kit",
+                "exclude-promotion",
+                "Exclude_wipeout",
+                "Eye Shadow Finish_Shimmer",
+                "eye shadow stick",
+                "Eye_Eyeshadow",
+                "Eye_Kits",
+                "Eye_Mascara",
+                "Eyes: Eyeshadow",
+                "eyeshadow",
+                "Featured: Best Sellers",
+                "Featured: New Arrivals",
+                "feed-gpc-2834",
+                "feed-gpc-2904",
+                "love-it",
+                "LP40",
+                "Make-up Type_Eye",
+                "Makeup",
+                "Makeup: Eyes",
+                "mascara",
+                "TryNowAutomated",
+                "Value Sets",
+                "waterproof mascara"
+            ],
+            "variants": [
+                {
+                    "id": 40569219776535,
+                    "title": "Default Title",
+                    "option1": "Default Title",
+                    "option2": null,
+                    "option3": null,
+                    "sku": "DUOMASC-BUND-2",
+                    "requires_shipping": true,
+                    "taxable": true,
+                    "featured_image": null,
+                    "available": true,
+                    "price": "40.00",
+                    "grams": 0,
+                    "compare_at_price": "64.00",
+                    "position": 1,
+                    "product_id": 6889922002967,
+                    "created_at": "2023-05-15T14:35:47-04:00",
+                    "updated_at": "2026-06-09T09:14:08-04:00"
+                }
+            ],
+            "images": [
+                {
+                    "id": 30563221733399,
+                    "created_at": "2023-05-15T14:36:08-04:00",
+                    "position": 1,
+                    "updated_at": "2025-11-06T11:00:18-05:00",
+                    "product_id": 6889922002967,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Duo_MascaraEvergreenBundle_PearlShimmer_TaupeShimmer_LengthMatters-ECommerce_JPG_b5f325af-7f00-4fba-a8e3-81743b2567e0.jpg?v=1762444818",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 30563809624087,
+                    "created_at": "2023-05-16T16:26:27-04:00",
+                    "position": 2,
+                    "updated_at": "2023-05-16T16:26:35-04:00",
+                    "product_id": 6889922002967,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Juelp_Duo_Mascara_PearlShimmer_EyeGrid-ECommerce_JPG.jpg?v=1684268795",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 30563809656855,
+                    "created_at": "2023-05-16T16:26:29-04:00",
+                    "position": 3,
+                    "updated_at": "2023-05-16T16:26:35-04:00",
+                    "product_id": 6889922002967,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Juelp_Duo_Mascara_TaupeShimmer_EyeGrid-ECommerce_JPG.jpg?v=1684268795",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 30563221831703,
+                    "created_at": "2023-05-15T14:36:08-04:00",
+                    "position": 4,
+                    "updated_at": "2023-05-31T17:08:52-04:00",
+                    "product_id": 6889922002967,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_LengthMatters_Before_After-ECommerce_JPG_527254fa-f007-45db-97e3-b0d0211be3c2.jpg?v=1685567332",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 30563221995543,
+                    "created_at": "2023-05-15T14:36:09-04:00",
+                    "position": 5,
+                    "updated_at": "2023-05-31T17:08:52-04:00",
+                    "product_id": 6889922002967,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundles_ES101-LengthMatters_Lifestyle_01-ECommerce_JPG_d95bbbbe-e150-4e68-9a65-6d370b30afa4.jpg?v=1685567332",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 30563221798935,
+                    "created_at": "2023-05-15T14:36:08-04:00",
+                    "position": 6,
+                    "updated_at": "2023-05-31T17:08:52-04:00",
+                    "product_id": 6889922002967,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_LengthMatters_Lifestyle1-ECommerce_JPG_7a05e764-898e-4a55-962c-80b46576b7fa.jpg?v=1685567332",
+                    "width": 1500,
+                    "height": 1500
+                }
+            ],
+            "options": [
+                {
+                    "name": "Title",
+                    "position": 1,
+                    "values": [
+                        "Default Title"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 8752423010327,
+            "title": "Lip Pudding Deep-Hydration Lip Balm",
+            "handle": "lip-pudding-deep-hydration-lip-balm",
+            "body_html": "",
+            "published_at": "2026-03-24T12:10:40-04:00",
+            "created_at": "2026-03-12T14:15:22-04:00",
+            "updated_at": "2026-06-09T09:14:08-04:00",
+            "vendor": "Julep",
+            "product_type": "Lip Balm",
+            "tags": [
+                "Category_Lips",
+                "Category_Skincare",
+                "Lip_Gloss",
+                "Lips: Lip Gloss",
+                "Make-up Type_Lips",
+                "Makeup: Lips",
+                "Skincare",
+                "TryNowAutomated"
+            ],
+            "variants": [
+                {
+                    "id": 44740746117143,
+                    "title": "Vanilla",
+                    "option1": "Vanilla",
+                    "option2": null,
+                    "option3": null,
+                    "sku": "0230-0032017",
+                    "requires_shipping": true,
+                    "taxable": true,
+                    "featured_image": {
+                        "id": 38440719777815,
+                        "product_id": 8752423010327,
+                        "position": 1,
+                        "created_at": "2026-03-19T16:55:39-04:00",
+                        "updated_at": "2026-03-19T16:57:53-04:00",
+                        "alt": null,
+                        "width": 2048,
+                        "height": 2048,
+                        "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Lip_Pudding_PDP_Vanilla_Soldier-Amazon.jpg?v=1773953873",
+                        "variant_ids": [
+                            44740746117143
+                        ]
+                    },
+                    "available": true,
+                    "price": "14.00",
+                    "grams": 0,
+                    "compare_at_price": null,
+                    "position": 1,
+                    "product_id": 8752423010327,
+                    "created_at": "2026-03-12T14:15:22-04:00",
+                    "updated_at": "2026-06-09T09:14:08-04:00"
+                },
+                {
+                    "id": 44740746149911,
+                    "title": "Candy",
+                    "option1": "Candy",
+                    "option2": null,
+                    "option3": null,
+                    "sku": "0230-0032019",
+                    "requires_shipping": true,
+                    "taxable": true,
+                    "featured_image": {
+                        "id": 38440719908887,
+                        "product_id": 8752423010327,
+                        "position": 6,
+                        "created_at": "2026-03-19T16:55:42-04:00",
+                        "updated_at": "2026-03-19T16:57:53-04:00",
+                        "alt": null,
+                        "width": 2048,
+                        "height": 2048,
+                        "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Lip_Pudding_PDP_Candy_Soldier-Amazon.jpg?v=1773953873",
+                        "variant_ids": [
+                            44740746149911
+                        ]
+                    },
+                    "available": true,
+                    "price": "14.00",
+                    "grams": 0,
+                    "compare_at_price": null,
+                    "position": 2,
+                    "product_id": 8752423010327,
+                    "created_at": "2026-03-12T14:15:22-04:00",
+                    "updated_at": "2026-06-09T09:14:08-04:00"
+                }
+            ],
+            "images": [
+                {
+                    "id": 38440719777815,
+                    "created_at": "2026-03-19T16:55:39-04:00",
+                    "position": 1,
+                    "updated_at": "2026-03-19T16:57:53-04:00",
+                    "product_id": 8752423010327,
+                    "variant_ids": [
+                        44740746117143
+                    ],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Lip_Pudding_PDP_Vanilla_Soldier-Amazon.jpg?v=1773953873",
+                    "width": 2048,
+                    "height": 2048
+                },
+                {
+                    "id": 38440721874967,
+                    "created_at": "2026-03-19T16:56:48-04:00",
+                    "position": 2,
+                    "updated_at": "2026-03-19T16:57:53-04:00",
+                    "product_id": 8752423010327,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_LipPudding_PDP_ShadeDescription.jpg?v=1773953873",
+                    "width": 2048,
+                    "height": 2048
+                },
+                {
+                    "id": 38440721809431,
+                    "created_at": "2026-03-19T16:56:48-04:00",
+                    "position": 3,
+                    "updated_at": "2026-03-19T16:57:53-04:00",
+                    "product_id": 8752423010327,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_LipPudding_PDP_ShadeGroupBA.jpg?v=1773953873",
+                    "width": 2048,
+                    "height": 2048
+                },
+                {
+                    "id": 38440721842199,
+                    "created_at": "2026-03-19T16:56:48-04:00",
+                    "position": 4,
+                    "updated_at": "2026-03-19T16:57:53-04:00",
+                    "product_id": 8752423010327,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_LipPudding_PDP_ProductBenefit.jpg?v=1773953873",
+                    "width": 2048,
+                    "height": 2048
+                },
+                {
+                    "id": 38440642510871,
+                    "created_at": "2026-03-19T16:33:49-04:00",
+                    "position": 5,
+                    "updated_at": "2026-03-19T16:57:53-04:00",
+                    "product_id": 8752423010327,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_LipPudding_PDP_Ingredient.jpg?v=1773953873",
+                    "width": 2048,
+                    "height": 2048
+                },
+                {
+                    "id": 38440719908887,
+                    "created_at": "2026-03-19T16:55:42-04:00",
+                    "position": 6,
+                    "updated_at": "2026-03-19T16:57:53-04:00",
+                    "product_id": 8752423010327,
+                    "variant_ids": [
+                        44740746149911
+                    ],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Lip_Pudding_PDP_Candy_Soldier-Amazon.jpg?v=1773953873",
+                    "width": 2048,
+                    "height": 2048
+                }
+            ],
+            "options": [
+                {
+                    "name": "Shade",
+                    "position": 1,
+                    "values": [
+                        "Vanilla",
+                        "Candy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 6723066462231,
+            "title": "6 PC Eyeshadow 101 Cr\u00e8me-to-Powder Waterproof Eyeshadow Stick",
+            "handle": "eyeshadow-101-creme-to-powder-waterproof-eyeshadow-stick-6-pc-sets",
+            "body_html": "<p>Choose your favorite 6 pc set! No brush required when using this pigment-packed formula that glides effortlessly across lids before drying to a waterproof powder finish.</p>\n<p>how to use: <span>Sweep directly across lids. Blend with fingers or the built-in smudger before the formula sets. For best results, prime the smudger by coating it with color prior to use.</span></p>",
+            "published_at": "2026-03-11T12:43:30-04:00",
+            "created_at": "2022-04-19T13:46:20-04:00",
+            "updated_at": "2026-06-09T09:14:08-04:00",
+            "vendor": "Julep",
+            "product_type": "Bundle",
+            "tags": [
+                "6 piece",
+                "Category_Eyes",
+                "Category_Makeup",
+                "Category_Value Kit",
+                "cruelty free",
+                "everything es101 page",
+                "exclude-promotion",
+                "Exclude_wipeout",
+                "eye liner",
+                "Eye Shadow Finish_Matte",
+                "Eye Shadow Finish_Shimmer",
+                "eye shadow stick",
+                "Eye_Eyeshadow",
+                "Eye_Kits",
+                "eyed",
+                "Eyes: Eyeliner",
+                "Eyes: Eyeshadow",
+                "eyeshadow",
+                "Featured",
+                "Featured: Best Sellers",
+                "feed-gpc-2904",
+                "love-it",
+                "Make-up Type_Eye",
+                "Makeup",
+                "Makeup: Eyes",
+                "TryNowAutomated",
+                "Value Sets"
+            ],
+            "variants": [
+                {
+                    "id": 40561973297175,
+                    "title": "Matte Magic",
+                    "option1": "Matte Magic",
+                    "option2": null,
+                    "option3": null,
+                    "sku": "6PC-MATTE-BUND",
+                    "requires_shipping": true,
+                    "taxable": true,
+                    "featured_image": {
+                        "id": 38066455085079,
+                        "product_id": 6723066462231,
+                        "position": 7,
+                        "created_at": "2026-02-02T12:13:00-05:00",
+                        "updated_at": "2026-03-11T12:30:53-04:00",
+                        "alt": "Matte Magic 6 PC Bundle",
+                        "width": 1500,
+                        "height": 1500,
+                        "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep-Eyeshadow1016pcBundle_Matte_-Soldier_Textureshadecomp_UPDATED2024_2.jpg?v=1773246653",
+                        "variant_ids": [
+                            40561973297175
+                        ]
+                    },
+                    "available": true,
+                    "price": "72.00",
+                    "grams": 454,
+                    "compare_at_price": "120.00",
+                    "position": 1,
+                    "product_id": 6723066462231,
+                    "created_at": "2023-05-02T16:05:42-04:00",
+                    "updated_at": "2026-06-09T09:14:08-04:00"
+                },
+                {
+                    "id": 40104761196567,
+                    "title": "Garden Party",
+                    "option1": "Garden Party",
+                    "option2": null,
+                    "option3": null,
+                    "sku": "1016PC2-Bundle",
+                    "requires_shipping": true,
+                    "taxable": true,
+                    "featured_image": {
+                        "id": 38369988640791,
+                        "product_id": 6723066462231,
+                        "position": 1,
+                        "created_at": "2023-05-04T12:16:03-04:00",
+                        "updated_at": "2026-03-11T12:30:53-04:00",
+                        "alt": null,
+                        "width": 1500,
+                        "height": 1500,
+                        "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Eyeshadow_101_Pearl_Shimmer_Sand_Shimmer_Putty_MAtte_Clay_Matte_Rose_Shimmer_Smoky_Amethyst_Shimmer_garden_party_6pc_Soldier_ecom_BG_-ECommerce_JPG.jpg?v=1773246653",
+                        "variant_ids": [
+                            40104761196567
+                        ]
+                    },
+                    "available": true,
+                    "price": "72.00",
+                    "grams": 454,
+                    "compare_at_price": "120.00",
+                    "position": 2,
+                    "product_id": 6723066462231,
+                    "created_at": "2022-05-20T15:41:07-04:00",
+                    "updated_at": "2026-06-09T09:14:08-04:00"
+                },
+                {
+                    "id": 40104761229335,
+                    "title": "Bold Basics",
+                    "option1": "Bold Basics",
+                    "option2": null,
+                    "option3": null,
+                    "sku": "1016PC1-Bundle",
+                    "requires_shipping": true,
+                    "taxable": true,
+                    "featured_image": {
+                        "id": 30817748877335,
+                        "product_id": 6723066462231,
+                        "position": 8,
+                        "created_at": "2023-10-11T19:10:16-04:00",
+                        "updated_at": "2026-03-11T12:28:02-04:00",
+                        "alt": null,
+                        "width": 1500,
+                        "height": 1500,
+                        "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Eyeshadow101_ChampagneShimmerDEsertMatteTaupeShimmerPuttyMatteBronzeShimmerCocoaShimmer_BoldBasics6pc_Soldier_EcomBG-ECommerce_JPG_1.jpg?v=1773246482",
+                        "variant_ids": [
+                            40104761229335
+                        ]
+                    },
+                    "available": true,
+                    "price": "72.00",
+                    "grams": 454,
+                    "compare_at_price": "120.00",
+                    "position": 3,
+                    "product_id": 6723066462231,
+                    "created_at": "2022-05-20T15:41:07-04:00",
+                    "updated_at": "2026-06-09T09:14:08-04:00"
+                }
+            ],
+            "images": [
+                {
+                    "id": 38369988640791,
+                    "created_at": "2023-05-04T12:16:03-04:00",
+                    "position": 1,
+                    "updated_at": "2026-03-11T12:30:53-04:00",
+                    "product_id": 6723066462231,
+                    "variant_ids": [
+                        40104761196567
+                    ],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Eyeshadow_101_Pearl_Shimmer_Sand_Shimmer_Putty_MAtte_Clay_Matte_Rose_Shimmer_Smoky_Amethyst_Shimmer_garden_party_6pc_Soldier_ecom_BG_-ECommerce_JPG.jpg?v=1773246653",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 38066888179735,
+                    "created_at": "2026-02-02T14:15:11-05:00",
+                    "position": 2,
+                    "updated_at": "2026-03-11T12:30:53-04:00",
+                    "product_id": 6723066462231,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_ES101_WhyYoullLoveIt.jpg?v=1773246653",
+                    "width": 1024,
+                    "height": 1024
+                },
+                {
+                    "id": 38066940542999,
+                    "created_at": "2026-02-02T14:30:08-05:00",
+                    "position": 3,
+                    "updated_at": "2026-03-11T12:30:53-04:00",
+                    "product_id": 6723066462231,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_ES101_How_To_Apply.jpg?v=1773246653",
+                    "width": 2048,
+                    "height": 2048
+                },
+                {
+                    "id": 38066888146967,
+                    "created_at": "2026-02-02T14:15:11-05:00",
+                    "position": 4,
+                    "updated_at": "2026-03-11T12:30:53-04:00",
+                    "product_id": 6723066462231,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_ES101_WaterproofClaim.jpg?v=1773246653",
+                    "width": 1024,
+                    "height": 1024
+                },
+                {
+                    "id": 31008609206295,
+                    "created_at": "2024-01-16T13:32:31-05:00",
+                    "position": 5,
+                    "updated_at": "2026-03-11T12:30:53-04:00",
+                    "product_id": 6723066462231,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Eyeshadow101_HowtoUse_PDP_UPDATED2024-ECommerce_JPG_045ca6bb-0e2a-46ae-89b0-220eaceaff3f.jpg?v=1773246653",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 38066469535767,
+                    "created_at": "2026-02-02T12:18:32-05:00",
+                    "position": 6,
+                    "updated_at": "2026-03-11T12:30:53-04:00",
+                    "product_id": 6723066462231,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_ES101_EyeBundle_ShadePairings_2Shades_UPDATED2024_bd6ceafd-fc3f-4855-a9a7-3d56e1fbb9f6.jpg?v=1773246653",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 38066455085079,
+                    "created_at": "2026-02-02T12:13:00-05:00",
+                    "position": 7,
+                    "updated_at": "2026-03-11T12:30:53-04:00",
+                    "product_id": 6723066462231,
+                    "variant_ids": [
+                        40561973297175
+                    ],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep-Eyeshadow1016pcBundle_Matte_-Soldier_Textureshadecomp_UPDATED2024_2.jpg?v=1773246653",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 30817748877335,
+                    "created_at": "2023-10-11T19:10:16-04:00",
+                    "position": 8,
+                    "updated_at": "2026-03-11T12:28:02-04:00",
+                    "product_id": 6723066462231,
+                    "variant_ids": [
+                        40104761229335
+                    ],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Eyeshadow101_ChampagneShimmerDEsertMatteTaupeShimmerPuttyMatteBronzeShimmerCocoaShimmer_BoldBasics6pc_Soldier_EcomBG-ECommerce_JPG_1.jpg?v=1773246482",
+                    "width": 1500,
+                    "height": 1500
+                }
+            ],
+            "options": [
+                {
+                    "name": "Color",
+                    "position": 1,
+                    "values": [
+                        "Matte Magic",
+                        "Garden Party",
+                        "Bold Basics"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 8750013087767,
+            "title": "The Perfect Pair Duo",
+            "handle": "the-perfect-pair-duo",
+            "body_html": "<p>Define, hydrate, and perfect your pout with this effortless lip duo. Start with the With a Trace Retractable Lip Liner to shape and lock in color, then glide on It\u2019s Balm Lip Crayon for smooth, full-coverage color with a moisturizing, balm-like feel. Together, they deliver long-lasting definition and comfortable, hydrated lips in just a few swipes.</p>",
+            "published_at": "2026-03-10T16:56:10-04:00",
+            "created_at": "2026-03-10T16:32:21-04:00",
+            "updated_at": "2026-06-09T09:14:08-04:00",
+            "vendor": "Julep",
+            "product_type": "Bundle",
+            "tags": [
+                "Category_Lips",
+                "Category_Value Kit",
+                "Exclude_wipeout",
+                "Featured: Best Sellers",
+                "Make-up Type_Lips",
+                "TryNowAutomated",
+                "Value Sets"
+            ],
+            "variants": [
+                {
+                    "id": 44731590017047,
+                    "title": "Canyon Rose + Antique Rose",
+                    "option1": "Canyon Rose + Antique Rose",
+                    "option2": null,
+                    "option3": null,
+                    "sku": "BALM-DUO-CRAR",
+                    "requires_shipping": true,
+                    "taxable": true,
+                    "featured_image": {
+                        "id": 38471434895383,
+                        "product_id": 8750013087767,
+                        "position": 13,
+                        "created_at": "2026-03-24T12:43:57-04:00",
+                        "updated_at": "2026-03-24T12:43:58-04:00",
+                        "alt": null,
+                        "width": 2048,
+                        "height": 2048,
+                        "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_Canyon_Rose_Antique_Rose.jpg?v=1774370638",
+                        "variant_ids": [
+                            44731590017047
+                        ]
+                    },
+                    "available": true,
+                    "price": "22.00",
+                    "grams": 0,
+                    "compare_at_price": "28.00",
+                    "position": 1,
+                    "product_id": 8750013087767,
+                    "created_at": "2026-03-10T16:32:21-04:00",
+                    "updated_at": "2026-06-09T09:14:08-04:00"
+                },
+                {
+                    "id": 44731590049815,
+                    "title": "Vintage Mauve + Velvet Mauve",
+                    "option1": "Vintage Mauve + Velvet Mauve",
+                    "option2": null,
+                    "option3": null,
+                    "sku": "BALM-DUO-VMVM",
+                    "requires_shipping": true,
+                    "taxable": true,
+                    "featured_image": {
+                        "id": 38459728166935,
+                        "product_id": 8750013087767,
+                        "position": 1,
+                        "created_at": "2026-03-23T15:23:35-04:00",
+                        "updated_at": "2026-03-24T10:37:01-04:00",
+                        "alt": null,
+                        "width": 2048,
+                        "height": 2048,
+                        "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_90s_Neutral_Sweet_Truffle.jpg?v=1774363021",
+                        "variant_ids": [
+                            44731590049815
+                        ]
+                    },
+                    "available": true,
+                    "price": "22.00",
+                    "grams": 0,
+                    "compare_at_price": "28.00",
+                    "position": 2,
+                    "product_id": 8750013087767,
+                    "created_at": "2026-03-10T16:32:21-04:00",
+                    "updated_at": "2026-06-09T09:14:08-04:00"
+                },
+                {
+                    "id": 44731590082583,
+                    "title": "Cherry Wood + Rich Black Cherry",
+                    "option1": "Cherry Wood + Rich Black Cherry",
+                    "option2": null,
+                    "option3": null,
+                    "sku": "BALM-DUO-CWRBC",
+                    "requires_shipping": true,
+                    "taxable": true,
+                    "featured_image": {
+                        "id": 38459730165783,
+                        "product_id": 8750013087767,
+                        "position": 9,
+                        "created_at": "2026-03-23T15:24:15-04:00",
+                        "updated_at": "2026-03-23T15:24:17-04:00",
+                        "alt": null,
+                        "width": 2048,
+                        "height": 2048,
+                        "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_Black_Cherry_Rich_Black_Cherry.jpg?v=1774293857",
+                        "variant_ids": [
+                            44731590082583
+                        ]
+                    },
+                    "available": true,
+                    "price": "22.00",
+                    "grams": 0,
+                    "compare_at_price": "28.00",
+                    "position": 3,
+                    "product_id": 8750013087767,
+                    "created_at": "2026-03-10T16:32:21-04:00",
+                    "updated_at": "2026-06-09T09:14:08-04:00"
+                },
+                {
+                    "id": 44731590115351,
+                    "title": "90s Neutral + Sweet Truffle",
+                    "option1": "90s Neutral + Sweet Truffle",
+                    "option2": null,
+                    "option3": null,
+                    "sku": "BALM-DUO-90ST",
+                    "requires_shipping": true,
+                    "taxable": true,
+                    "featured_image": {
+                        "id": 38459735015447,
+                        "product_id": 8750013087767,
+                        "position": 10,
+                        "created_at": "2026-03-23T15:26:55-04:00",
+                        "updated_at": "2026-03-23T15:26:56-04:00",
+                        "alt": null,
+                        "width": 2048,
+                        "height": 2048,
+                        "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_90s_Neutral_Sweet_Truffle_25e6b205-5c50-4e1f-aa6b-bb5748c82e5d.jpg?v=1774294016",
+                        "variant_ids": [
+                            44731590115351
+                        ]
+                    },
+                    "available": true,
+                    "price": "22.00",
+                    "grams": 0,
+                    "compare_at_price": "28.00",
+                    "position": 4,
+                    "product_id": 8750013087767,
+                    "created_at": "2026-03-10T16:32:21-04:00",
+                    "updated_at": "2026-06-09T09:14:08-04:00"
+                },
+                {
+                    "id": 44731590148119,
+                    "title": "Rich Plum + Rich Black Cherry",
+                    "option1": "Rich Plum + Rich Black Cherry",
+                    "option2": null,
+                    "option3": null,
+                    "sku": "BALM-DUO-RPRBC",
+                    "requires_shipping": true,
+                    "taxable": true,
+                    "featured_image": {
+                        "id": 38459737767959,
+                        "product_id": 8750013087767,
+                        "position": 11,
+                        "created_at": "2026-03-23T15:28:01-04:00",
+                        "updated_at": "2026-03-23T15:28:02-04:00",
+                        "alt": null,
+                        "width": 2048,
+                        "height": 2048,
+                        "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_Rich_Plum_Rich_Black_Cherry.jpg?v=1774294082",
+                        "variant_ids": [
+                            44731590148119
+                        ]
+                    },
+                    "available": true,
+                    "price": "22.00",
+                    "grams": 0,
+                    "compare_at_price": "28.00",
+                    "position": 5,
+                    "product_id": 8750013087767,
+                    "created_at": "2026-03-10T16:32:21-04:00",
+                    "updated_at": "2026-06-09T09:14:08-04:00"
+                },
+                {
+                    "id": 44731590180887,
+                    "title": "Black Cherry + Rich Black Cherry",
+                    "option1": "Black Cherry + Rich Black Cherry",
+                    "option2": null,
+                    "option3": null,
+                    "sku": "BALM-DUO-BCRBC",
+                    "requires_shipping": true,
+                    "taxable": true,
+                    "featured_image": {
+                        "id": 38459736948759,
+                        "product_id": 8750013087767,
+                        "position": 12,
+                        "created_at": "2026-03-23T15:27:37-04:00",
+                        "updated_at": "2026-03-23T15:27:39-04:00",
+                        "alt": null,
+                        "width": 2048,
+                        "height": 2048,
+                        "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_Black_Cherry_Rich_Black_Cherry_805b2221-2109-49d4-95ab-6abb01164a05.jpg?v=1774294059",
+                        "variant_ids": [
+                            44731590180887
+                        ]
+                    },
+                    "available": true,
+                    "price": "22.00",
+                    "grams": 0,
+                    "compare_at_price": "28.00",
+                    "position": 6,
+                    "product_id": 8750013087767,
+                    "created_at": "2026-03-10T16:32:21-04:00",
+                    "updated_at": "2026-06-09T09:14:08-04:00"
+                }
+            ],
+            "images": [
+                {
+                    "id": 38459728166935,
+                    "created_at": "2026-03-23T15:23:35-04:00",
+                    "position": 1,
+                    "updated_at": "2026-03-24T10:37:01-04:00",
+                    "product_id": 8750013087767,
+                    "variant_ids": [
+                        44731590049815
+                    ],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_90s_Neutral_Sweet_Truffle.jpg?v=1774363021",
+                    "width": 2048,
+                    "height": 2048
+                },
+                {
+                    "id": 37937443274775,
+                    "created_at": "2026-01-17T12:58:29-05:00",
+                    "position": 2,
+                    "updated_at": "2026-03-24T10:37:01-04:00",
+                    "product_id": 8750013087767,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_It_sBalm_PDPRefresh_Amazon_Before_After.jpg?v=1774363021",
+                    "width": 2048,
+                    "height": 2048
+                },
+                {
+                    "id": 37937443242007,
+                    "created_at": "2026-01-17T12:58:29-05:00",
+                    "position": 3,
+                    "updated_at": "2026-03-24T10:37:01-04:00",
+                    "product_id": 8750013087767,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Amazon_It_sBalm_PDPImagewithCopy_updated.jpg?v=1774363021",
+                    "width": 2048,
+                    "height": 2048
+                },
+                {
+                    "id": 37937443307543,
+                    "created_at": "2026-01-17T12:58:29-05:00",
+                    "position": 4,
+                    "updated_at": "2026-03-24T10:37:01-04:00",
+                    "product_id": 8750013087767,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_It_sBalm_PDPRefresh_Amazon_Benefits_Option_2.jpg?v=1774363021",
+                    "width": 2048,
+                    "height": 2048
+                },
+                {
+                    "id": 37937443340311,
+                    "created_at": "2026-01-17T12:58:29-05:00",
+                    "position": 5,
+                    "updated_at": "2026-03-24T10:37:01-04:00",
+                    "product_id": 8750013087767,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_It_sBalm_PDPRefresh_Amazon_ModelApplication.jpg?v=1774363021",
+                    "width": 2048,
+                    "height": 2048
+                },
+                {
+                    "id": 30867573080087,
+                    "created_at": "2023-11-08T14:35:57-05:00",
+                    "position": 6,
+                    "updated_at": "2026-03-24T10:37:01-04:00",
+                    "product_id": 8750013087767,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep-WithaTraceLipLinerPDP-TexturewIngredients-ECommerce_JPG.jpg?v=1774363021",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 30867573047319,
+                    "created_at": "2023-11-08T14:35:55-05:00",
+                    "position": 7,
+                    "updated_at": "2026-03-24T10:37:01-04:00",
+                    "product_id": 8750013087767,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep-WithATrace-Model-HowToUse-Dinara-AntiqueRose-nocallout-ECommerce_JPG.jpg?v=1774363021",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 30827219845143,
+                    "created_at": "2023-10-17T14:34:46-04:00",
+                    "position": 8,
+                    "updated_at": "2026-03-24T10:37:01-04:00",
+                    "product_id": 8750013087767,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep-WithaTraceLipLinerPDP-Benefits-option2-ECommerce_JPG_1_-min.jpg?v=1774363021",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 38459730165783,
+                    "created_at": "2026-03-23T15:24:15-04:00",
+                    "position": 9,
+                    "updated_at": "2026-03-23T15:24:17-04:00",
+                    "product_id": 8750013087767,
+                    "variant_ids": [
+                        44731590082583
+                    ],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_Black_Cherry_Rich_Black_Cherry.jpg?v=1774293857",
+                    "width": 2048,
+                    "height": 2048
+                },
+                {
+                    "id": 38459735015447,
+                    "created_at": "2026-03-23T15:26:55-04:00",
+                    "position": 10,
+                    "updated_at": "2026-03-23T15:26:56-04:00",
+                    "product_id": 8750013087767,
+                    "variant_ids": [
+                        44731590115351
+                    ],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_90s_Neutral_Sweet_Truffle_25e6b205-5c50-4e1f-aa6b-bb5748c82e5d.jpg?v=1774294016",
+                    "width": 2048,
+                    "height": 2048
+                },
+                {
+                    "id": 38459737767959,
+                    "created_at": "2026-03-23T15:28:01-04:00",
+                    "position": 11,
+                    "updated_at": "2026-03-23T15:28:02-04:00",
+                    "product_id": 8750013087767,
+                    "variant_ids": [
+                        44731590148119
+                    ],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_Rich_Plum_Rich_Black_Cherry.jpg?v=1774294082",
+                    "width": 2048,
+                    "height": 2048
+                },
+                {
+                    "id": 38459736948759,
+                    "created_at": "2026-03-23T15:27:37-04:00",
+                    "position": 12,
+                    "updated_at": "2026-03-23T15:27:39-04:00",
+                    "product_id": 8750013087767,
+                    "variant_ids": [
+                        44731590180887
+                    ],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_Black_Cherry_Rich_Black_Cherry_805b2221-2109-49d4-95ab-6abb01164a05.jpg?v=1774294059",
+                    "width": 2048,
+                    "height": 2048
+                },
+                {
+                    "id": 38471434895383,
+                    "created_at": "2026-03-24T12:43:57-04:00",
+                    "position": 13,
+                    "updated_at": "2026-03-24T12:43:58-04:00",
+                    "product_id": 8750013087767,
+                    "variant_ids": [
+                        44731590017047
+                    ],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Bundle_The_Perfect_Pair_Lip_Duo_Soldier-Ecomm_Canyon_Rose_Antique_Rose.jpg?v=1774370638",
+                    "width": 2048,
+                    "height": 2048
+                }
+            ],
+            "options": [
+                {
+                    "name": "Shade",
+                    "position": 1,
+                    "values": [
+                        "Canyon Rose + Antique Rose",
+                        "Vintage Mauve + Velvet Mauve",
+                        "Cherry Wood + Rich Black Cherry",
+                        "90s Neutral + Sweet Truffle",
+                        "Rich Plum + Rich Black Cherry",
+                        "Black Cherry + Rich Black Cherry"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 8640246317079,
+            "title": "It\u2019s Balm Moisturizing Lip Color Trios",
+            "handle": "it-s-balm-moisturizing-lip-color-trio",
+            "body_html": "<p dir=\"ltr\">Creamy, full-coverage lip crayon with a hydrating core that moisturizes and conditions lips. Sunflower butter + vitamin E nourish lips while ultra-fine pigments give bold color and a smooth semi-gloss shine.</p>",
+            "published_at": "2026-03-02T08:57:44-05:00",
+            "created_at": "2025-12-11T14:11:11-05:00",
+            "updated_at": "2026-06-09T09:14:08-04:00",
+            "vendor": "Julep",
+            "product_type": "Bundle",
+            "tags": [
+                "3 piece",
+                "Category_Makeup",
+                "Category_Value Kit",
+                "exclude-promotion",
+                "Exclude_wipeout",
+                "Featured: Best Sellers",
+                "Featured: New Arrivals",
+                "its balm",
+                "lip gloss",
+                "Lip_Crayon",
+                "lipstick",
+                "Make-up Type_Lips",
+                "Makeup",
+                "trynow-test",
+                "TryNowAutomated",
+                "Value Sets"
+            ],
+            "variants": [
+                {
+                    "id": 44091067006999,
+                    "title": "Neutral to Sultry",
+                    "option1": "Neutral to Sultry",
+                    "option2": null,
+                    "option3": null,
+                    "sku": "H24-ITBALMTRIO",
+                    "requires_shipping": true,
+                    "taxable": true,
+                    "featured_image": {
+                        "id": 32277106753559,
+                        "product_id": 8640246317079,
+                        "position": 4,
+                        "created_at": "2024-09-18T10:09:19-04:00",
+                        "updated_at": "2025-11-06T11:20:47-05:00",
+                        "alt": null,
+                        "width": 2048,
+                        "height": 2048,
+                        "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Holiday2024_Bundle_It_sBalmTrio_EcommSoldier-min.jpg?v=1762446047",
+                        "variant_ids": [
+                            44091067006999
+                        ]
+                    },
+                    "available": true,
+                    "price": "34.00",
+                    "grams": 0,
+                    "compare_at_price": "48.00",
+                    "position": 1,
+                    "product_id": 8640246317079,
+                    "created_at": "2025-12-11T14:12:18-05:00",
+                    "updated_at": "2026-06-09T09:14:08-04:00"
+                },
+                {
+                    "id": 44091070316567,
+                    "title": "Cherry Orchid Nudes",
+                    "option1": "Cherry Orchid Nudes",
+                    "option2": null,
+                    "option3": null,
+                    "sku": "9993-9993021",
+                    "requires_shipping": true,
+                    "taxable": true,
+                    "featured_image": {
+                        "id": 30827067670551,
+                        "product_id": 8640246317079,
+                        "position": 2,
+                        "created_at": "2023-10-17T12:36:36-04:00",
+                        "updated_at": "2025-11-06T11:06:58-05:00",
+                        "alt": null,
+                        "width": 1500,
+                        "height": 1500,
+                        "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep-It_sBalmTrio-Version1-CherryWood_CashmereNude_DustyOrchidShimmer_ECommSoldier-ECommerce_JPG.jpg?v=1762445218",
+                        "variant_ids": [
+                            44091070316567
+                        ]
+                    },
+                    "available": true,
+                    "price": "34.00",
+                    "grams": 0,
+                    "compare_at_price": "48.00",
+                    "position": 2,
+                    "product_id": 8640246317079,
+                    "created_at": "2025-12-11T14:14:52-05:00",
+                    "updated_at": "2026-06-09T09:14:08-04:00"
+                },
+                {
+                    "id": 44091070349335,
+                    "title": "90's Rose Mauve",
+                    "option1": "90's Rose Mauve",
+                    "option2": null,
+                    "option3": null,
+                    "sku": "ITS-BALM-TRIO-C",
+                    "requires_shipping": true,
+                    "taxable": true,
+                    "featured_image": {
+                        "id": 30825930588183,
+                        "product_id": 8640246317079,
+                        "position": 3,
+                        "created_at": "2023-10-16T16:19:34-04:00",
+                        "updated_at": "2025-11-06T11:06:56-05:00",
+                        "alt": null,
+                        "width": 1500,
+                        "height": 1500,
+                        "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_It_sBalmTrioVer.2_EcomSoldier_OverheadShot-ECommerce_JPG.jpg?v=1762445216",
+                        "variant_ids": [
+                            44091070349335
+                        ]
+                    },
+                    "available": true,
+                    "price": "34.00",
+                    "grams": 0,
+                    "compare_at_price": "48.00",
+                    "position": 3,
+                    "product_id": 8640246317079,
+                    "created_at": "2025-12-11T14:14:52-05:00",
+                    "updated_at": "2026-06-09T09:14:08-04:00"
+                },
+                {
+                    "id": 44091106820119,
+                    "title": "Spiced Neutrals",
+                    "option1": "Spiced Neutrals",
+                    "option2": null,
+                    "option3": null,
+                    "sku": "BALM-TRIO-TTS",
+                    "requires_shipping": true,
+                    "taxable": true,
+                    "featured_image": {
+                        "id": 37682743541783,
+                        "product_id": 8640246317079,
+                        "position": 1,
+                        "created_at": "2025-12-11T14:51:57-05:00",
+                        "updated_at": "2025-12-11T14:51:58-05:00",
+                        "alt": "Spice Neutrals Trio Soldier",
+                        "width": 800,
+                        "height": 800,
+                        "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Its_Balm_Tiktok_Shop_Bundle_Cinnamon_Raisin_Rich_Plum_Cashmere_Nude_Soldier-On_White.jpg?v=1765482718",
+                        "variant_ids": [
+                            44091106820119
+                        ]
+                    },
+                    "available": true,
+                    "price": "34.00",
+                    "grams": 0,
+                    "compare_at_price": "48.00",
+                    "position": 4,
+                    "product_id": 8640246317079,
+                    "created_at": "2025-12-11T14:38:34-05:00",
+                    "updated_at": "2026-06-09T09:14:08-04:00"
+                }
+            ],
+            "images": [
+                {
+                    "id": 37682743541783,
+                    "created_at": "2025-12-11T14:51:57-05:00",
+                    "position": 1,
+                    "updated_at": "2025-12-11T14:51:58-05:00",
+                    "product_id": 8640246317079,
+                    "variant_ids": [
+                        44091106820119
+                    ],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Its_Balm_Tiktok_Shop_Bundle_Cinnamon_Raisin_Rich_Plum_Cashmere_Nude_Soldier-On_White.jpg?v=1765482718",
+                    "width": 800,
+                    "height": 800
+                },
+                {
+                    "id": 30827067670551,
+                    "created_at": "2023-10-17T12:36:36-04:00",
+                    "position": 2,
+                    "updated_at": "2025-11-06T11:06:58-05:00",
+                    "product_id": 8640246317079,
+                    "variant_ids": [
+                        44091070316567
+                    ],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep-It_sBalmTrio-Version1-CherryWood_CashmereNude_DustyOrchidShimmer_ECommSoldier-ECommerce_JPG.jpg?v=1762445218",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 30825930588183,
+                    "created_at": "2023-10-16T16:19:34-04:00",
+                    "position": 3,
+                    "updated_at": "2025-11-06T11:06:56-05:00",
+                    "product_id": 8640246317079,
+                    "variant_ids": [
+                        44091070349335
+                    ],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_It_sBalmTrioVer.2_EcomSoldier_OverheadShot-ECommerce_JPG.jpg?v=1762445216",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 32277106753559,
+                    "created_at": "2024-09-18T10:09:19-04:00",
+                    "position": 4,
+                    "updated_at": "2025-11-06T11:20:47-05:00",
+                    "product_id": 8640246317079,
+                    "variant_ids": [
+                        44091067006999
+                    ],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Holiday2024_Bundle_It_sBalmTrio_EcommSoldier-min.jpg?v=1762446047",
+                    "width": 2048,
+                    "height": 2048
+                },
+                {
+                    "id": 31203829547031,
+                    "created_at": "2024-03-11T15:27:33-04:00",
+                    "position": 5,
+                    "updated_at": "2026-01-17T13:05:27-05:00",
+                    "product_id": 8640246317079,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_It_sBalm_IngredientAsset-ECommerce_JPG.jpg?v=1768673127",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 31020479774743,
+                    "created_at": "2024-01-19T15:14:38-05:00",
+                    "position": 6,
+                    "updated_at": "2024-01-19T15:14:38-05:00",
+                    "product_id": 8640246317079,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_It_sBalm_ApplicationShot_CanyonRose_2-1-ECommerce_JPG_85016a99-4a13-4d18-878f-36a27db6d834.jpg?v=1705695278",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 31203829710871,
+                    "created_at": "2024-03-11T15:27:35-04:00",
+                    "position": 7,
+                    "updated_at": "2026-01-17T13:05:27-05:00",
+                    "product_id": 8640246317079,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_It_sBalm_ShadeExt_UpdatedIngredientCallout_2-ECommerce_JPG.jpg?v=1768673127",
+                    "width": 1500,
+                    "height": 1500
+                }
+            ],
+            "options": [
+                {
+                    "name": "Shade",
+                    "position": 1,
+                    "values": [
+                        "Neutral to Sultry",
+                        "Cherry Orchid Nudes",
+                        "90's Rose Mauve",
+                        "Spiced Neutrals"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 6889922101271,
+            "title": "Simply Subtle Natural Eyeshadow Set (3 PC)",
+            "handle": "simply-subtle-3pc-set",
+            "body_html": "This 3PC kit includes all you need to easily enhance your eyes for an enhanced, natural look for everyday. It features two beautiful Eyeshadow 101 shades that apply and blend like a dream, along with a fan-fave mascara for <span data-mce-fragment=\"1\">instant</span><span data-mce-fragment=\"1\">ly longer</span><span data-mce-fragment=\"1\">\u00a0lashes.</span>",
+            "published_at": "2026-02-19T15:05:27-05:00",
+            "created_at": "2023-05-15T14:36:23-04:00",
+            "updated_at": "2026-06-09T09:14:08-04:00",
+            "vendor": "Julep",
+            "product_type": "Bundle",
+            "tags": [
+                "4 piece",
+                "Category_Makeup",
+                "Category_Value Kit",
+                "exclude-promotion",
+                "Exclude_wipeout",
+                "Eye Shadow Finish_Matte",
+                "eye shadow stick",
+                "Eye_Eyeshadow",
+                "Eye_Kits",
+                "Eye_Mascara",
+                "Eyes: Eyeshadow",
+                "eyeshadow",
+                "Featured: Best Sellers",
+                "Featured: New Arrivals",
+                "feed-gpc-2834",
+                "feed-gpc-2904",
+                "love-it",
+                "LP40",
+                "Make-up Type_Eye",
+                "Makeup",
+                "Makeup: Eyes",
+                "mascara",
+                "TryNowAutomated",
+                "Value Sets",
+                "waterproof mascara"
+            ],
+            "variants": [
+                {
+                    "id": 40569220759575,
+                    "title": "Default Title",
+                    "option1": "Default Title",
+                    "option2": null,
+                    "option3": null,
+                    "sku": "DUOMASC-BUND-1",
+                    "requires_shipping": true,
+                    "taxable": true,
+                    "featured_image": null,
+                    "available": true,
+                    "price": "40.00",
+                    "grams": 0,
+                    "compare_at_price": "64.00",
+                    "position": 1,
+                    "product_id": 6889922101271,
+                    "created_at": "2023-05-15T14:36:23-04:00",
+                    "updated_at": "2026-06-09T09:14:08-04:00"
+                }
+            ],
+            "images": [
+                {
+                    "id": 30563223076887,
+                    "created_at": "2023-05-15T14:36:44-04:00",
+                    "position": 1,
+                    "updated_at": "2025-11-06T11:00:19-05:00",
+                    "product_id": 6889922101271,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Duo_MascaraEvergreenBundle_StoneMatte_PuttyMatte_LengthMatters-ECommerce_JPG_65b8ccc9-b59c-4555-9c1c-14929e19d6ad.jpg?v=1762444819",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 30563808903191,
+                    "created_at": "2023-05-16T16:25:47-04:00",
+                    "position": 2,
+                    "updated_at": "2023-05-16T16:26:09-04:00",
+                    "product_id": 6889922101271,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_Duo_MascaraEvergreenBundle_StoneMatte_PuttyMatte_LengthMatters_Textures-ECommerce_JPG.jpg?v=1684268769",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 30563809034263,
+                    "created_at": "2023-05-16T16:25:59-04:00",
+                    "position": 3,
+                    "updated_at": "2023-05-16T16:26:09-04:00",
+                    "product_id": 6889922101271,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Juelp_Duo_Mascara_StoneMatte_EyeGrid-ECommerce_JPG.jpg?v=1684268769",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 30563808935959,
+                    "created_at": "2023-05-16T16:25:57-04:00",
+                    "position": 4,
+                    "updated_at": "2023-05-16T16:26:09-04:00",
+                    "product_id": 6889922101271,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Juelp_Duo_Mascara_PuttyMatte_EyeGrid-ECommerce_JPG.jpg?v=1684268769",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 30563223207959,
+                    "created_at": "2023-05-15T14:36:44-04:00",
+                    "position": 5,
+                    "updated_at": "2023-05-16T16:26:09-04:00",
+                    "product_id": 6889922101271,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_LengthMatters_Before_After-ECommerce_JPG_5786fcec-279c-4368-93e4-fe26c32c3b4f.jpg?v=1684268769",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 30563223273495,
+                    "created_at": "2023-05-15T14:36:44-04:00",
+                    "position": 6,
+                    "updated_at": "2023-05-24T15:36:32-04:00",
+                    "product_id": 6889922101271,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_LengthMatters_ProductBenefitIngredientCallout-ECommerce_JPG_462c1a39-9569-4983-b976-db4602874cd8.jpg?v=1684956992",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 30563223175191,
+                    "created_at": "2023-05-15T14:36:44-04:00",
+                    "position": 7,
+                    "updated_at": "2023-05-24T15:36:32-04:00",
+                    "product_id": 6889922101271,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_LengthMatters_Lifestyle1-ECommerce_JPG_1985d7ba-ad14-4719-9d7d-ba450dc2070b.jpg?v=1684956992",
+                    "width": 1500,
+                    "height": 1500
+                }
+            ],
+            "options": [
+                {
+                    "name": "Title",
+                    "position": 1,
+                    "values": [
+                        "Default Title"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 8693685780503,
+            "title": "So Plush Glossy Lip Oil (Rosy Glow)",
+            "handle": "so-plush-glossy-lip-oil-rosy-glow-1",
+            "body_html": "<p>Use this sheer, nourishing formula to help revitalize dry lips while moisturizing with skin-friendly botanical oils.</p>\n<!---->",
+            "published_at": "2026-02-11T14:59:59-05:00",
+            "created_at": "2026-02-09T14:24:09-05:00",
+            "updated_at": "2026-06-09T09:14:08-04:00",
+            "vendor": "Julep",
+            "product_type": "Upsell",
+            "tags": [
+                "gwp",
+                "test",
+                "TryNowAutomated"
+            ],
+            "variants": [
+                {
+                    "id": 44286228070423,
+                    "title": "Default Title",
+                    "option1": "Default Title",
+                    "option2": null,
+                    "option3": null,
+                    "sku": "0230-0039002",
+                    "requires_shipping": true,
+                    "taxable": true,
+                    "featured_image": null,
+                    "available": true,
+                    "price": "8.00",
+                    "grams": 0,
+                    "compare_at_price": "14.00",
+                    "position": 1,
+                    "product_id": 8693685780503,
+                    "created_at": "2026-02-09T14:24:10-05:00",
+                    "updated_at": "2026-06-09T09:14:08-04:00"
+                }
+            ],
+            "images": [
+                {
+                    "id": 32098941075479,
+                    "created_at": "2024-08-16T15:10:03-04:00",
+                    "position": 1,
+                    "updated_at": "2026-02-09T14:26:25-05:00",
+                    "product_id": 8693685780503,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_So_Plush_Glossy_Lip_Oil_Soldier_Rose_Garden_2x-ECommerce_JPG.jpg?v=1770665185",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 32098928328727,
+                    "created_at": "2024-08-16T15:10:25-04:00",
+                    "position": 2,
+                    "updated_at": "2026-02-09T14:26:25-05:00",
+                    "product_id": 8693685780503,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_SoPlushGlossyLipOil_LifestyleEnvironmental3_2x-ECommerce_JPG.jpg?v=1770665185",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 32098928132119,
+                    "created_at": "2024-08-16T15:10:24-04:00",
+                    "position": 3,
+                    "updated_at": "2026-02-09T14:26:25-05:00",
+                    "product_id": 8693685780503,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_SoPlushGlossyLipOil_Benefits_Ingredients_2x-ECommerce_JPG.jpg?v=1770665185",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 32098927968279,
+                    "created_at": "2024-08-16T15:10:25-04:00",
+                    "position": 4,
+                    "updated_at": "2026-02-09T14:26:25-05:00",
+                    "product_id": 8693685780503,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_SoPlushGlossyLipOil_LipComparisonChart_2x-ECommerce_JPG.jpg?v=1770665185",
+                    "width": 1500,
+                    "height": 1500
+                }
+            ],
+            "options": [
+                {
+                    "name": "Title",
+                    "position": 1,
+                    "values": [
+                        "Default Title"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 8693702295575,
+            "title": "Length Matters Mascara",
+            "handle": "length-matters-mascara",
+            "body_html": "<p>A buildable, jet black mascara with an extreme lengthening formula that coats lashes from root to tip. The unique, finely tapered micro-bristle brush defines individual lashes and layers for a softly curled, wide-eyed look that stretches the limits.</p>\n<p><br></p>\n<p>To use: Start at the base of your lash line, and pull wand upward smoothly without wiggling. Repeat, applying additional coats until you achieve your desired look.</p>\n<p><br></p>\n<p>0.35 oz, 10.1 g</p>",
+            "published_at": "2026-02-11T14:59:57-05:00",
+            "created_at": "2026-02-09T14:37:40-05:00",
+            "updated_at": "2026-06-09T09:14:08-04:00",
+            "vendor": "Julep",
+            "product_type": "Upsell",
+            "tags": [
+                "gwp",
+                "test",
+                "TryNowAutomated"
+            ],
+            "variants": [
+                {
+                    "id": 44287018401815,
+                    "title": "Default Title",
+                    "option1": "Default Title",
+                    "option2": null,
+                    "option3": null,
+                    "sku": "0223-0009002",
+                    "requires_shipping": true,
+                    "taxable": true,
+                    "featured_image": null,
+                    "available": true,
+                    "price": "15.00",
+                    "grams": 454,
+                    "compare_at_price": "24.00",
+                    "position": 1,
+                    "product_id": 8693702295575,
+                    "created_at": "2026-02-09T14:37:41-05:00",
+                    "updated_at": "2026-06-09T09:14:08-04:00"
+                }
+            ],
+            "images": [
+                {
+                    "id": 30528653688855,
+                    "created_at": "2023-04-14T10:32:26-04:00",
+                    "position": 1,
+                    "updated_at": "2025-11-06T10:01:42-05:00",
+                    "product_id": 8693702295575,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/products/Julep_LengthMatters_OverheadShot-ECommerce_JPG.jpg?v=1762441302",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 30528652640279,
+                    "created_at": "2023-04-14T10:32:09-04:00",
+                    "position": 2,
+                    "updated_at": "2023-05-31T16:58:59-04:00",
+                    "product_id": 8693702295575,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/products/Julep_LengthMatters_Before_After-ECommerce_JPG.jpg?v=1685566739",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 30528652574743,
+                    "created_at": "2023-04-14T10:32:07-04:00",
+                    "position": 3,
+                    "updated_at": "2023-09-22T18:16:54-04:00",
+                    "product_id": 8693702295575,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/products/Julep_LengthMatters_ProductBenefitIngredientCallout-ECommerce_JPG_1.jpg?v=1695421014",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 30525277143063,
+                    "created_at": "2023-04-13T11:04:07-04:00",
+                    "position": 4,
+                    "updated_at": "2023-09-22T18:16:52-04:00",
+                    "product_id": 8693702295575,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/products/Julep-LengthMattersPDP-NewPackageSameFormulaassets-ECommerce_JPG.jpg?v=1695421012",
+                    "width": 1500,
+                    "height": 1500
+                },
+                {
+                    "id": 31027374522391,
+                    "created_at": "2024-01-22T12:51:13-05:00",
+                    "position": 5,
+                    "updated_at": "2024-01-22T12:51:15-05:00",
+                    "product_id": 8693702295575,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_MascaraComparisonChart_Revised__UPDATED2024-ECommerce_JPG_f429ee3d-da59-4893-a1e3-2a154627a531.jpg?v=1705945875",
+                    "width": 1500,
+                    "height": 1500
+                }
+            ],
+            "options": [
+                {
+                    "name": "Title",
+                    "position": 1,
+                    "values": [
+                        "Default Title"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 8693701476375,
+            "title": "Vitamin E Hydrating Cream Cleanser",
+            "handle": "vitamin-e-hydrating-cream-cleanser-1",
+            "body_html": "<p><meta charset=\"utf-8\">Pamper your skin with this rich, creamy cleanser infused with the nourishing power of Vitamin E. Designed to gently lift away impurities, makeup, and excess oil without stripping skin\u2019s natural moisture, this cleanser leaves your complexion soft, supple, and perfectly refreshed.</p>\n<p>\u00a0</p>",
+            "published_at": "2026-02-11T14:59:57-05:00",
+            "created_at": "2026-02-09T14:36:37-05:00",
+            "updated_at": "2026-06-09T09:14:08-04:00",
+            "vendor": "Julep",
+            "product_type": "Upsell",
+            "tags": [
+                "gwp",
+                "test",
+                "TryNowAutomated"
+            ],
+            "variants": [
+                {
+                    "id": 44286947328023,
+                    "title": "Default Title",
+                    "option1": "Default Title",
+                    "option2": null,
+                    "option3": null,
+                    "sku": "0203-0027002",
+                    "requires_shipping": true,
+                    "taxable": true,
+                    "featured_image": null,
+                    "available": true,
+                    "price": "14.00",
+                    "grams": 454,
+                    "compare_at_price": "22.00",
+                    "position": 1,
+                    "product_id": 8693701476375,
+                    "created_at": "2026-02-09T14:36:37-05:00",
+                    "updated_at": "2026-06-09T09:14:08-04:00"
+                }
+            ],
+            "images": [
+                {
+                    "id": 36999083950103,
+                    "created_at": "2025-10-23T21:35:19-04:00",
+                    "position": 1,
+                    "updated_at": "2025-10-23T21:41:48-04:00",
+                    "product_id": 8693701476375,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_VitaminEHydratingCreamCleanser_Soldier-Ecomm.jpg?v=1761270108",
+                    "width": 2048,
+                    "height": 2048
+                },
+                {
+                    "id": 36999083851799,
+                    "created_at": "2025-10-23T21:35:19-04:00",
+                    "position": 2,
+                    "updated_at": "2025-10-23T21:41:48-04:00",
+                    "product_id": 8693701476375,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_VitaminEHydratingCreamCleanser_Features.jpg?v=1761270108",
+                    "width": 2048,
+                    "height": 2048
+                },
+                {
+                    "id": 36999083917335,
+                    "created_at": "2025-10-23T21:35:19-04:00",
+                    "position": 3,
+                    "updated_at": "2025-10-23T21:41:48-04:00",
+                    "product_id": 8693701476375,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_VitaminEHydratingCreamCleanser_ProductBenefits.jpg?v=1761270108",
+                    "width": 2048,
+                    "height": 2048
+                },
+                {
+                    "id": 36999083819031,
+                    "created_at": "2025-10-23T21:35:19-04:00",
+                    "position": 4,
+                    "updated_at": "2025-10-23T21:41:48-04:00",
+                    "product_id": 8693701476375,
+                    "variant_ids": [],
+                    "src": "https://cdn.shopify.com/s/files/1/0022/2878/1091/files/Julep_VitaminEHydratingCreamCleanser_ApplicationImage.jpg?v=1761270108",
+                    "width": 2048,
+                    "height": 2048
+                }
+            ],
+            "options": [
+                {
+                    "name": "Title",
+                    "position": 1,
+                    "values": [
+                        "Default Title"
+                    ]
+                }
+            ]
+        }
+    ]
+}
